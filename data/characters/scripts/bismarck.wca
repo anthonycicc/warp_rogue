@@ -1,0 +1,175 @@
+~
+
+  Character Script: Governour Bismarck
+
+  Bismarck is a decadent noble, a cynic and amoral opportunist. 
+  He likes to enjoy his wealth, while others do the work.
+~
+
+
+
+~
+
+  Death Script
+
+~
+if $KILLED = 'Yes'
+
+  ~ do nothing ~
+
+end_if
+
+~ Death Script End ~
+
+
+
+
+
+~
+
+  Dialogue Script
+
+~
+if $TRIGGERED = 'Yes'
+
+  ~
+    collecting dialogue determining data
+  ~
+  quest_status 'Crush the Mutant Riot' $riot_quest_status
+  quest_status 'Defeat Mephisto' $mephisto_quest_status
+
+
+
+  ~
+
+    Quest: Crush the Mutant Riot
+
+  ~
+  if $riot_quest_status != 'Completed'
+
+    ~
+      quest not given - give quest
+    ~
+    if $riot_quest_status = ''
+
+      dialogue_say 'Loyal citizen, you look like a capable individual, '
+      dialogue_say 'do you want to serve the Emperor? Of course you do! '
+      dialogue_say 'The mutants in the Dread Mines have rioted! '
+      dialogue_say 'The demagogues of Chaos made the impure rebel! '
+      dialogue_say 'We have been to gracious towards them! We should have '
+      dialogue_say 'killed these degenerates right away! '
+      dialogue_say 'We will not make such a mistake again! '
+      dialogue_say 'The rebellion is lead by a mutant called Gregor. '
+      dialogue_say 'I want his head! Unfortunately, I need all my troops here.. '
+      dialogue_say 'If you bring me his head, I will reward you! '
+      dialogue_say 'The Dread Mines are north east of here. Kill all mutants '
+      dialogue_say 'you encounter! '
+      dialogue_say 'It is time for a major cleansing! For the Emperor!'
+
+      quest_set_status 'Crush the Mutant Riot' 'Given'
+
+      dialogue_add_option 'For the Emperor!'
+ 
+      dialogue_choice $choice
+
+      end
+
+    end_if
+  
+
+    ~ 
+      quest completed, but not rewarded 
+    ~
+    if $riot_quest_status = 'Completed, Not Rewarded'
+
+      dialogue_say 'Great! I think I will put his head on the display somewhere.. '
+      dialogue_say 'No one disobeys the Emperor and lives! Never forget that! ' 
+      dialogue_say 'Here is your reward [He gives you 1000 credits]. For the Emperor!'
+
+      add_money $ACTIVE_CHARACTER 1000
+
+      quest_set_status 'Crush the Mutant Riot' 'Completed'
+    
+      dialogue_add_option 'For the Emperor!'
+    
+      dialogue_choice $choice
+
+      end
+
+    end_if
+
+    ~ 
+      quest not completed 
+    ~
+    dialogue_say 'Where is the head of Gregor?! Go into the Dread Mines and kill him! '
+    dialogue_say 'For the Emperor!'
+
+    dialogue_add_option 'For the Emperor!'
+    
+    dialogue_choice $choice
+
+    end
+
+  end_if
+
+
+
+  ~
+
+    Quest: Defeat Mephisto
+
+  ~
+  if $mephisto_quest_status != 'Completed'
+
+    ~
+      quest not given - give quest
+    ~
+    if $mephisto_quest_status = ''
+
+      dialogue_say 'Nice to see you again. You are a most loyal servant '
+      dialogue_say 'of the Emperor, and have proven your worth. I am sure '
+      dialogue_say 'you will be very glad to hear that we have located the '
+      dialogue_say 'source of the evil which is devastating our beautyful '
+      dialogue_say 'planet. The invasion was the idea of a Chaos commander '
+      dialogue_say 'called Mephisto. If we defeat him that might make '
+      dialogue_say 'his troops retreat. His fortress is south east of here. '
+      dialogue_say 'I have already told the Emperor that I know someone capable '
+      dialogue_say 'of defeating him. He told me that he would declare '
+      dialogue_say 'you Hero of Imperium if you managed to do it. '
+      dialogue_say 'Really, I am envious. By the way, did you watch the '
+      dialogue_say 'Execution Channel last night? They executed Governour '
+      dialogue_say 'Protos because he fleed when the Swarm arrived on his planet. '
+      dialogue_say 'Some people will never understand that loyalty is everything, '
+      dialogue_say 'I guess. You understand that, don\'t you? Good luck! For the Emperor!'
+
+      quest_set_status 'Defeat Mephisto' 'Given'
+
+      dialogue_add_option 'For the Emperor..'
+ 
+      dialogue_choice $choice
+
+      end
+
+    end_if
+
+    ~ 
+      quest not completed 
+    ~
+    dialogue_say 'What are you doing here? Should I tell the Emperor that you '
+    dialogue_say 'have abandoned his cause?! Go and kill Mephisto! For the Emperor!'
+
+    dialogue_add_option 'For the Emperor..'
+
+    dialogue_choice $choice
+
+    end
+
+  end_if
+
+end_if
+
+
+
+
+~ Dialogue Script End ~
+

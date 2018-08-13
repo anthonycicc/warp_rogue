@@ -1,0 +1,70 @@
+#
+# Fort Iron Gate Characters
+#
+
+
+NAME:Renegade soldier:
+FACTION:Chaos:
+CAREER:Veteran soldier:
+GENDER:M:
+SYMBOL:R:
+POWER_LEVEL:2:
+CC:50:
+RC:50:
+ST:52:
+TN:50:
+AG:51:
+IN:35:
+WP:54:
+FL:40:
+PERK:Weapon maintenance:
+OBJECT:Laser rifle:
+OBJECT:Knife:
+OBJECT:Flak armour:
+DESCRIPTION:A renegade Imperial soldier.:
+
+NAME:Colonel Kurtz:
+FACTION:Chaos:
+CAREER:Senior officer:
+GENDER:M:
+SYMBOL:R:
+COLOUR:Gray:
+POWER_LEVEL:3:
+CC:60:
+RC:63:
+ST:60:
+TN:64:
+AG:57:
+IN:48:
+WP:79:
+FL:62:
+ATTRIBUTE:Unique:
+PERK:Weapon maintenance:
+PERK:Grenadier:
+PERK:Leader:
+PERK:Battle tactics:
+PERK:Immunity to pain:
+PERK:Immunity to fear:
+OBJECT:Automatic cannon:
+OBJECT:Combat armour:
+OBJECT:Chainsword:
+SCRIPT:kurtz.wca:
+DESCRIPTION:Colonel Kurtz, a former war hero of the Imperium .. now a renegade.:
+
+NAME:Fury:
+FACTION:Chaos:
+GENDER:N:
+SYMBOL:D:
+COLOUR:Red:
+POWER_LEVEL:2:
+CC:50:
+RC:40:
+ST:60:
+TN:40:
+AG:60:
+IN:10:
+WP:70:
+FL:0:
+ATTRIBUTE:Daemonic:
+OBJECT:Daemon talons:
+DESCRIPTION:A horrible daemonic beast with gruesome claws.:

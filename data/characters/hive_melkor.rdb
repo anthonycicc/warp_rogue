@@ -1,0 +1,238 @@
+#
+#
+# Hive Melkor Characters
+#
+#
+
+
+#
+# Beast Characters
+#
+
+NAME:Corpse fly:
+FACTION:Beasts:
+GENDER:N:
+SYMBOL:b:
+COLOUR:Purple:
+POWER_LEVEL:1:
+CC:30:
+RC:0:
+ST:1:
+TN:1:
+AG:40:
+IN:1:
+WP:1:
+FL:0:
+PERK:Alertness:
+PERK:Immunity to disease:
+OBJECT:Corpse bacteria:
+DESCRIPTION:A tiny, purple fly which feeds on the bodies of the dead. :
+DESCRIPTION:Its salvia is usually contaminated with the worst diseases.:
+
+NAME:Corpse beetle:
+FACTION:Beasts:
+GENDER:N:
+SYMBOL:b:
+COLOUR:Vermin brown:
+POWER_LEVEL:1:
+CC:30:
+RC:0:
+ST:20:
+TN:30:
+AG:30:
+IN:1:
+WP:40:
+FL:0:
+PERK:Immunity to fear:
+OBJECT:Corpse beetle fangs:
+DESCRIPTION:6 compound eyes glitter in the pale light atop this beetle's :
+DESCRIPTION:carapace.:
+
+
+
+#
+# Plague Cult Characters
+#
+
+NAME:Plague cultist:
+FACTION:Chaos:
+GENDER:M:
+SYMBOL:C:
+COLOUR:Poison green:
+POWER_LEVEL:1:
+CC:34:
+RC:35:
+ST:32:
+TN:32:
+AG:35:
+IN:37:
+WP:40:
+FL:30:
+PERK:Immunity to disease:
+OBJECT:Laser pistol:
+OBJECT:Knife:
+OBJECT:Credits:30:
+DESCRIPTION:A plague cultist:
+
+NAME:Igur:
+FACTION:Chaos:
+GENDER:M:
+SYMBOL:D:
+COLOUR:Tan:
+POWER_LEVEL:1:
+CC:30:
+RC:20:
+ST:30:
+TN:30:
+AG:26:
+IN:10:
+WP:30:
+FL:0:
+ATTRIBUTE:Daemonic:
+OBJECT:Cleaver:
+DESCRIPTION:Igurs are low-ranking daemonic creatures. They are usually :
+DESCRIPTION:summoned if a higher daemon needs servants who do lowly :
+DESCRIPTION:manual labour for him. Igurs are not good fighters, but :
+DESCRIPTION:skilled butchers.:
+
+NAME:Igor:
+FACTION:Chaos:
+GENDER:M:
+SYMBOL:D:
+COLOUR:Sienna:
+POWER_LEVEL:2:
+CC:40:
+RC:20:
+ST:46:
+TN:46:
+AG:28:
+IN:30:
+WP:53:
+FL:0:
+ATTRIBUTE:Unique:
+ATTRIBUTE:Daemonic:
+OBJECT:Prod of Education:
+DESCRIPTION:When the Igurs were originally created Igor was used as :
+DESCRIPTION:the prototype. There are rumours  that Igor once was a :
+DESCRIPTION:human, but looking at him makes that hard to believe. :
+DESCRIPTION:Nowadays, Igor is a minor daemon who "educates" newly :
+DESCRIPTION:created Igurs.:
+
+NAME:Pestling:
+FACTION:Chaos:
+GENDER:N:
+SYMBOL:d:
+COLOUR:Poison green:
+POWER_LEVEL:1:
+CC:40:
+RC:20:
+ST:20:
+TN:10:
+AG:10:
+IN:1:
+WP:50:
+FL:0:
+ATTRIBUTE:Daemonic:
+PERK:Immunity to disease:
+OBJECT:Pestling mouth:
+DESCRIPTION:A small disgusting worm which spreads horrible diseases.:
+
+NAME:King Pest:
+FACTION:Chaos:
+GENDER:M:
+SYMBOL:C:
+COLOUR:Vermin brown:
+POWER_LEVEL:2:
+CC:54:
+RC:19:
+ST:39:
+TN:58:
+AG:42:
+IN:70:
+WP:98:
+FL:0:
+ATTRIBUTE:Unique:
+ATTRIBUTE:Daemonic:
+PERK:Immunity to disease:
+PERK:Immunity to poison:
+PERK:Immunity to pain:
+PERK:Immunity to fear:
+OBJECT:Plague knife:
+DESCRIPTION:A rotten, infested servant of Chaos.:
+
+
+
+#
+# Ratkin Characters
+#
+
+NAME:Ratkin warrior:
+FACTION:Ratkin:
+GENDER:M:
+SYMBOL:a:
+COLOUR:Vermin brown:
+POWER_LEVEL:1:
+CC:30:
+RC:35:
+ST:28:
+TN:28:
+AG:44:
+IN:20:
+WP:40:
+FL:30:
+PERK:Immunity to disease:
+PERK:Immunity to poison:
+OBJECT:Warp blaster:
+OBJECT:Ratkin claws:
+DESCRIPTION:A ratkin warrior.:
+
+NAME:Ratkin assassin:
+FACTION:Ratkin:
+GENDER:M:
+SYMBOL:a:
+COLOUR:Gray:
+POWER_LEVEL:1:
+CC:40:
+RC:45:
+ST:28:
+TN:28:
+AG:54:
+IN:20:
+WP:40:
+FL:30:
+PERK:Immunity to disease:
+PERK:Immunity to poison:
+PERK:Stealth:
+PERK:Sneak attack:
+PERK:Critical strike:
+PERK:Alertness:
+OBJECT:Ratkin blowgun:
+OBJECT:Ratkin dagger:
+DESCRIPTION:A ratkin assassin.:
+
+NAME:Black Death:
+FACTION:Ratkin:
+GENDER:M:
+SYMBOL:a:
+COLOUR:Blood:
+POWER_LEVEL:2:
+CC:44:
+RC:58:
+ST:41:
+TN:40:
+AG:72:
+IN:40:
+WP:50:
+FL:30:
+ATTRIBUTE:Unique:
+PERK:Immunity to disease:
+PERK:Immunity to poison:
+PERK:Stealth:
+PERK:Sneak attack:
+PERK:Critical strike:
+PERK:Alertness:
+OBJECT:Pest Spitter:
+OBJECT:Warp Tooth:
+OBJECT:Black Habit:
+DESCRIPTION:An infamous ratkin assassin.:
+

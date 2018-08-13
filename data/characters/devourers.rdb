@@ -1,0 +1,82 @@
+#
+# Mephisto's Fortress Characters
+#
+
+NAME:Devourer:
+FACTION:Chaos:
+GENDER:M:
+SYMBOL:C:
+COLOUR:Blood:
+POWER_LEVEL:3:
+CC:70:
+RC:70:
+ST:60:
+TN:60:
+AG:60:
+IN:40:
+WP:70:
+FL:40:
+PERK:Rapid shot:
+PERK:Immunity to fear:
+OBJECT:Bolter:
+OBJECT:Assault armour:
+OBJECT:Chainaxe:
+DESCRIPTION:Devourers are elite Chaos warriors. They are called 'Devourers', :
+DESCRIPTION:because they have the habit of devouring fallen enemies. Blood, :
+DESCRIPTION:flesh, bones, and souls are the diet of these killing machines.:
+
+NAME:Remus:
+FACTION:Chaos:
+GENDER:M:
+SYMBOL:C:
+COLOUR:Army:
+POWER_LEVEL:4:
+CC:82:
+RC:64:
+ST:70:
+TN:70:
+AG:60:
+IN:30:
+WP:70:
+FL:40:
+PERK:Immunity to fear:
+PERK:Leader:
+PERK:Crushing strike:
+OBJECT:Power armour:
+OBJECT:Power axe:
+DESCRIPTION:The life of Remus has always been one of carnage. As a young :
+DESCRIPTION:man he joined the Imperial army where he reached the rank :
+DESCRIPTION:of sergeant before leaving the military to become a professional :
+DESCRIPTION:pit fighter. However, not even that could satisfy his blood lust. :
+DESCRIPTION:In the end he joined the forces of Chaos.. :
+
+NAME:Mephisto:
+FACTION:Chaos:
+GENDER:M:
+SYMBOL:C:
+COLOUR:Gold:
+POWER_LEVEL:4:
+CC:86:
+RC:84:
+ST:85:
+TN:88:
+AG:81:
+IN:70:
+WP:86:
+FL:70:
+ATTRIBUTE:Unique:
+PERK:Rapid shot:
+PERK:Rapid strike:
+PERK:Immunity to fear:
+PERK:Alertness:
+PERK:Leader:
+PERK:Battle tactics:
+OBJECT:Assault bolter:
+OBJECT:Power armour:
+OBJECT:Power sword:
+SCRIPT:mephisto.wca:
+DESCRIPTION:Mephisto is a Chaos champion, and the supreme commander of the forces of :
+DESCRIPTION:Chaos on Proelium. Mephisto claims he has no equal among mortals.:
+DESCRIPTION:He hopes that a successful invasion will elevate his status to that :
+DESCRIPTION:of a daemon prince, making him immortal.:
+

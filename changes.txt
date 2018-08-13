@@ -1,0 +1,70 @@
+Warp Rogue Changelog
+
+
+0.8.0
+
+
+Default Scenario
+================
+New default scenario 'Proelium'. Changes compared to the old scenario:
+Quests! The scenario features five quests.
+Multiple dungeons (cave, tunnels, ruins, ..)
+Improved career tree.
+Selling items is possible again. 
+More items are buyable.
+Recruiting costs are back.
+
+
+Engine
+======
+Improved look: clearer font, recalibrated colours, more custom symbols.
+Improved psychic power system.
+Improved timing system (no more hyper speed characters).
+Improved scripting engine.
+Improved random character generator.
+A real faction system.
+A new stat set.
+Standard stat advance reduced to 5.
+New unarmed combat rules.
+The player character now automatically gains all perks of his initial career.
+The 'power rating' concept was replaced by new concept called 'power level'.
+Support for non-reloadable weapons (RELOAD:No:).
+World map tiles can now have alternating colours.
+The career description format now supports required minimum stats and perks.
+Colours moved to RDB.
+Gore features moved to RDB.
+Fullscreen/windowed mode toggle added to the game controls screen.
+New debug command: get object ('o')
+New debug command: set quest status ('q')
+New object attributes: "Cannot be parried", "Environmental".
+New character attributes: "No unarmed attack", "Plant".
+New gore feature: "Plant parts".
+New perk: "Unarmed combat".
+New career type: "Elite".
+The drug 'Focus' was buggy. Fixed.
+Reload:x: did not actually consume x actions in all cases. Fixed.
+"Force channel" halved the close combat evocation penalty. Fixed.
+The maximal number of perks a character can have was increased to 10.
+The maximal number of psychic powers a character can learn was reduced to 8.
+The EP limit no longer applies to the total amount of EP gained. It still applies to the number of unspent EP, though.
+The effect of the Nomat drug was changed.
+The melee damage bonus for high Strenght now starts at 50 (instead of 60), and no longer applies to unarmed attacks.
+The effect of the Leader perk was changed (made more powerful).
+The effect of the Battle tactics perk was changed (made more sensible).
+The force weapon effect no longer requires passing a stat test.
+Non-unique character stat randomisation removed.
+Object attribute renamed: "No parry" -> "Cannot parry".
+Character flags were renamed to character attributes.
+Object attribute renamed: "Plague" -> "Disease".
+Center on player option removed.
+Brightness option removed.
+The "Environmental protection" object attribute was removed.
+The "Disease attack" perk was removed.
+Tomes were removed.
+Perks removed: Imperial language, Doctor, Manufacture drugs, Die hard, Persuade
+The body count feature was removed.
+SDL_ttf dependency removed.
+License changed to GPL v3.
+Windows: new Vista compatible icon.
+Windows: user data is now stored in the "My Documents" folder.
+

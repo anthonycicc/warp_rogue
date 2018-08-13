@@ -1,0 +1,74 @@
+#
+# Environment Objects
+#
+
+NAME:Elevator:
+TYPE:Environment:
+SUBTYPE:Elevator:
+SYMBOL:UpDown:
+COLOUR:Metal:
+CONDITION:100:
+ATTRIBUTE:Impassable:
+ATTRIBUTE:Blocks line of sight:
+DESCRIPTION:A transportation device used to move from one hive level to :
+DESCRIPTION:another.:
+
+NAME:Barbed wire:
+TYPE:Environment:
+SYMBOL:Wire:
+COLOUR:Gray:
+CONDITION:15:
+ATTRIBUTE:Impassable:
+DESCRIPTION:Fencing wire with sharp edges.:
+
+NAME:Barricade:
+TYPE:Environment:
+SYMBOL:Wall:
+COLOUR:Vermin brown:
+CONDITION:30:
+ATTRIBUTE:Impassable:
+ATTRIBUTE:Blocks line of sight:
+DESCRIPTION:A primitive barricade made of trash.:
+
+NAME:Metal wall:
+TYPE:Environment:
+SYMBOL:Wall:
+COLOUR:Metal:Rusty:33:
+CONDITION:200:
+ATTRIBUTE:Impassable:
+ATTRIBUTE:Blocks line of sight:
+DESCRIPTION:A solid metal wall.:
+
+NAME:Blackstone wall:
+TYPE:Environment:
+SYMBOL:Wall:
+COLOUR:Dark ash:
+CONDITION:200:
+ATTRIBUTE:Impassable:
+ATTRIBUTE:Blocks line of sight:
+DESCRIPTION:A wall made of a strange, unnatural material.:
+
+NAME:Rock:
+TYPE:Environment:
+SYMBOL:Wall:
+#COLOUR:Ash:Dark ash:10:
+COLOUR:Ash:
+CONDITION:80:
+ATTRIBUTE:Impassable:
+ATTRIBUTE:Blocks line of sight:
+DESCRIPTION:Rock.:
+
+NAME:Way up:
+TYPE:Environment:
+SUBTYPE:Way down:
+SYMBOL:<:
+COLOUR:Gray:
+DESCRIPTION:A way leading upwards.:
+
+NAME:Way down:
+TYPE:Environment:
+SUBTYPE:Way up:
+SYMBOL:>:
+COLOUR:Gray:
+DESCRIPTION:A way leading downwards.:
+

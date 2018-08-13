@@ -1,0 +1,68 @@
+~
+
+  Dungeon Script: Mephisto's Fortress
+
+~
+
+
+
+~
+
+  dungeon generation
+
+~
+if $GENERATION = 'Yes'
+
+  ~
+    map generation
+  ~ 
+  dungeon_set_wall 'Blackstone wall'
+  dungeon_set_floor 'Blackstone floor'
+  dungeon_set_connections 'Way down' 'Way up'
+
+  ~ ground level  ~
+  if $LEVEL = 0
+
+    dungeon_set_gate_level 0
+    dungeon_set_environment 'Ash wastes'
+    dungeon_set_obstacles 'Barbed wire' 'Barbed wire'
+
+  ~ all other levels are overground ~
+  else
+
+    dungeon_set_environment 'Smog' 
+
+  end_if
+
+  dungeon_generate
+
+
+  ~
+    character spawning
+  ~
+  if $LEVEL = 3
+
+    spawn_character 'Mephisto'
+
+    spawn_character 'Devourer' 9
+
+  else_if $LEVEL = 2
+
+    spawn_character 'Devourer' 10
+
+  else_if $LEVEL = 1
+ 
+    spawn_character 'Remus'
+
+    spawn_character 'Devourer' 9
+
+  else_if $LEVEL = 0
+
+    spawn_character 'Devourer' 10
+
+  end_if
+
+end_if
+
+
+

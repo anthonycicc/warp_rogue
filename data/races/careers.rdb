@@ -1,0 +1,799 @@
+#
+# Player Race Careers
+#
+
+NAME:Acolyte:
+TYPE:Basic:
+COLOUR:Dark gold:
+CC:10:0:
+RC:10:0:
+ST:10:0:
+TN:10:0:
+AG:10:0:
+IN:10:0:
+WP:10:0:
+FL:10:0:
+PERK:Stealth:
+PERK:Alertness:
+PERK:Daemon lore:
+OBJECT:Laser pistol:
+OBJECT:Knife:
+EXIT:Inquisitor:
+EXIT:Fanatic:
+EXIT:Assassin:
+DESCRIPTION:Acolytes are low ranking members of the Inquisition. They serve :
+DESCRIPTION:the higher ranking Inquisitors, trying to prove themselves :
+DESCRIPTION:worthy of being admitted into the inner circles of the :
+DESCRIPTION:organisation. Acolytes often work as spies.:
+
+NAME:Alien hunter:
+TYPE:Advanced:
+COLOUR:Fiery orange:
+CC:20:40:
+RC:20:40:
+ST:20:0:
+TN:20:0:
+AG:20:40:
+IN:10:40:
+WP:10:0:
+FL:10:0:
+PERK:Alien technology:
+PERK:Disarm:
+PERK:Stealth:
+OBJECT:Bolt carbine:
+OBJECT:Knife:
+OBJECT:Light combat armour:
+EXIT:Rogue trader:
+DESCRIPTION:Alien hunters hunt both aliens and their artifacts, :
+DESCRIPTION:usually sold to the highest bidder. Because knowledge :
+DESCRIPTION:about aliens and their technologies is so important for :
+DESCRIPTION:them, alien hunters tend to collect every piece of :
+DESCRIPTION:information about these things they can find.:
+
+NAME:Assassin:
+TYPE:Advanced:
+COLOUR:Gray:
+CC:20:40:
+RC:30:50:
+ST:10:0:
+TN:10:0:
+AG:30:50:
+IN:10:0:
+WP:20:0:
+FL:10:0:
+PERK:Stealth:Required:
+PERK:Sneak attack:Required:
+PERK:Blademaster:
+PERK:Alertness:Required:
+PERK:Critical strike:
+PERK:Critical shot:
+PERK:Marksman:
+PERK:Spot weakness:
+OBJECT:Sniper rifle:
+OBJECT:Venom blade:
+OBJECT:Light combat armour:
+EXIT:Master assassin:
+DESCRIPTION:Imperial assassins are expert, cold-blooded killers. :
+DESCRIPTION:Their victims usually do not even notice them :
+DESCRIPTION:before it is too late.:
+
+NAME:Bounty hunter:
+TYPE:Basic:
+COLOUR:Snakebite leather:
+CC:10:0:
+RC:10:0:
+ST:10:0:
+TN:10:0:
+AG:10:0:
+IN:0:0:
+WP:10:0:
+FL:0:0:
+PERK:Disarm:
+PERK:Fast draw:
+PERK:Unarmed combat:
+OBJECT:Automatic pistol:
+OBJECT:Knife:
+OBJECT:Flak armour:
+EXIT:Alien hunter:
+EXIT:Assassin:
+EXIT:Gunslinger:
+
+NAME:Daemon slayer:
+TYPE:Elite:
+COLOUR:Gold:
+CC:40:60:
+RC:0:0:
+ST:30:50:
+TN:30:50:
+AG:30:50:
+IN:30:40:
+WP:40:60:
+FL:30:0:
+PERK:Psychic weapons:Required:
+PERK:Psychic resistance:
+PERK:Crushing strike:Required:
+PERK:Critical strike:Required:
+PERK:Rapid strike:
+PERK:Uncanny dodge:
+PERK:Immunity to fear:Required:
+PERK:Daemon lore:Required:
+OBJECT:Rune axe:
+OBJECT:Plasma pistol:
+OBJECT:Power armour:
+DESCRIPTION:Daemon slayers are probably the most awe-inspiring inquisitors. :
+DESCRIPTION:They face the mightiest daemons - in close combat! :
+DESCRIPTION:Slayers are superb melee fighters, and rely on their :
+DESCRIPTION:force weapons to challenge even the most terrifying daemons. :
+DESCRIPTION:They are rumoured to be completely fearless.:
+
+NAME:Death cultist:
+TYPE:Basic:
+COLOUR:Gray:
+CC:10:0:
+RC:10:0:
+ST:0:0:
+TN:0:0:
+AG:20:0:
+IN:0:0:
+WP:0:0:
+FL:0:0:
+PERK:Stealth:
+PERK:Sneak attack:
+PERK:Blademaster:
+PERK:Alertness:
+OBJECT:Knife:
+OBJECT:Leather armour:
+EXIT:Assassin:
+DESCRIPTION:...:
+
+NAME:Desperado:
+TYPE:Advanced:
+COLOUR:Snakebite leather:
+CC:20:0:
+RC:30:50:
+ST:20:0:
+TN:20:40:
+AG:30:50:
+IN:10:0:
+WP:20:40:
+FL:10:0:
+PERK:Weapon maintenance:Required:
+PERK:Marksman:
+PERK:Quickload:Required:
+PERK:Fast draw:Required:
+PERK:Critical shot:Required:
+PERK:Unarmed combat:Required:
+OBJECT:Scorcher pistol:
+OBJECT:Scorcher pistol:
+OBJECT:Knife:
+OBJECT:Flak armour:
+EXIT:Alien hunter:
+EXIT:Bounty hunter:
+EXIT:Legendary gunfighter:
+DESCRIPTION:Desperados are seasoned gunslingers.:
+
+NAME:Enforcer:
+TYPE:Basic:
+COLOUR:Steel blue:
+CC:10:0:
+RC:10:0:
+ST:10:0:
+TN:10:0:
+AG:10:0:
+IN:10:0:
+WP:10:0:
+FL:10:0:
+PERK:Disarm:
+PERK:Weapon maintenance:
+PERK:Unarmed combat:
+OBJECT:Shotgun:
+OBJECT:Shock maul:
+OBJECT:Leather armour:
+EXIT:Enforcer sergeant:
+EXIT:Alien hunter:
+DESCRIPTION:Enforcers are the foot soldiers of the Imperial law enforcement :
+DESCRIPTION:agencies. These agencies handle what the Imperium considers to :
+DESCRIPTION:be minor crimes e.g. ordinary murder and theft. The major :
+DESCRIPTION:crimes, heresy and treason, are handled by the Inquisition and/or :
+DESCRIPTION:the Imperial military.:
+
+NAME:Enforcer sergeant:
+TYPE:Advanced:
+COLOUR:Steel blue:
+CC:20:40:
+RC:20:40:
+ST:20:40:
+TN:20:40:
+AG:20:40:
+IN:20:40:
+WP:20:40:
+FL:20:40:
+PERK:Disarm:Required:
+PERK:Weapon maintenance:Required:
+PERK:Unarmed combat:Required:
+PERK:Leader:Required:
+PERK:Marksman:
+OBJECT:Shotgun:
+OBJECT:Shock maul:
+OBJECT:Leather armour:
+EXIT:Judge:
+EXIT:Alien hunter:
+DESCRIPTION:Enforcer sergeants are experienced enforcers who have been promoted. :
+DESCRIPTION:They lead enforcer units.:
+
+NAME:Fanatic:
+TYPE:Basic:
+COLOUR:Blood:
+CC:10:0:
+RC:10:0:
+ST:0:0:
+TN:0:0:
+AG:10:0:
+IN:0:0:
+WP:0:0:
+FL:0:0:
+PERK:Immunity to fear:
+PERK:Immunity to pain:
+OBJECT:Laser pistol:
+OBJECT:Sword:
+EXIT:Acolyte:
+EXIT:Death cultist:
+DESCRIPTION:The countless cults in the Imperium are quite often both fanatic :
+DESCRIPTION:and militant. They regularly lynch people who they suspect of :
+DESCRIPTION:heresy, or consider genetically impure.:
+
+NAME:Ganger:
+TYPE:Basic:
+COLOUR:Sienna:
+CC:10:0:
+RC:10:0:
+ST:10:0:
+TN:10:0:
+AG:10:0:
+IN:0:0:
+WP:0:0:
+FL:0:0:
+PERK:Fast draw:
+PERK:Drug resistant:
+PERK:Unarmed combat:
+OBJECT:Automatic pistol:
+OBJECT:Knife:
+OBJECT:Leather armour:
+OBJECT:Stoic:
+EXIT:Scarred ganger:
+EXIT:Soldier:
+EXIT:Pit fighter:
+DESCRIPTION:Violent gangs are very common all across the Imperium. :
+DESCRIPTION:Gangers are notorious for their bad temper and excessive drug use.:
+
+NAME:Gang leader:
+TYPE:Elite:
+COLOUR:Sienna:
+CC:30:50:
+RC:30:50:
+ST:30:50:
+TN:30:50:
+AG:30:40:
+IN:10:0:
+WP:20:40:
+FL:20:40:
+PERK:Fast draw:Required:
+PERK:Drug resistant:
+PERK:Rapid shot:Required:
+PERK:Crushing strike:Required:
+PERK:Leader:Required:
+OBJECT:Automatic rifle:
+OBJECT:Chainsword:
+OBJECT:Flak armour:
+OBJECT:Stoic:
+
+NAME:General:
+TYPE:Elite:
+COLOUR:Army:
+CC:20:40:
+RC:20:40:
+ST:20:40:
+TN:20:40:
+AG:20:40:
+IN:30:50:
+WP:30:50:
+FL:30:50:
+PERK:Weapon maintenance:Required:
+PERK:First aid:
+PERK:Grenadier:
+PERK:Leader:Required:
+PERK:Battle tactics:Required:
+OBJECT:Revolver:
+OBJECT:Sword:
+
+NAME:Gunslinger:
+TYPE:Basic:
+COLOUR:Snakebite leather:
+CC:0:0:
+RC:20:0:
+ST:0:0:
+TN:0:0:
+AG:20:0:
+IN:0:0:
+WP:0:0:
+FL:0:0:
+PERK:Fast draw:
+PERK:Quickload:
+PERK:Weapon maintenance:
+OBJECT:Revolver:
+OBJECT:Revolver:
+OBJECT:Knife:
+EXIT:Desperado:
+EXIT:Bounty hunter:
+DESCRIPTION:Gunslingers are individualist merchenaries and criminals. Their :
+DESCRIPTION:exceptional handling of firearms is in high demand almost :
+DESCRIPTION:everywhere in Imperium.:
+
+NAME:Inquisitor:
+TYPE:Advanced:
+COLOUR:Dark gold:
+CC:20:40:
+RC:20:40:
+ST:20:40:
+TN:20:40:
+AG:20:40:
+IN:30:50:
+WP:30:50:
+FL:30:50:
+PERK:Stealth:Required:
+PERK:Alertness:Required:
+PERK:Daemon lore:Required:
+PERK:First aid:
+PERK:Leader:
+PERK:Spot trap:
+PERK:Unarmed combat:
+PERK:Weapon maintenance:
+OBJECT:Bolt pistol:
+OBJECT:Combat armour:
+OBJECT:Chainsword:
+EXIT:Wytch hunter:
+EXIT:Daemon slayer:
+EXIT:Xenoscourge:
+DESCRIPTION:Inquisitors are the agents of the Inquisition.:
+
+NAME:Judge:
+TYPE:Elite:
+COLOUR:Steel blue:
+CC:30:50:
+RC:30:50:
+ST:30:50:
+TN:30:50:
+AG:30:50:
+IN:30:50:
+WP:30:50:
+FL:30:50:
+PERK:Marksman:
+PERK:Disarm:Required:
+PERK:Leader:Required:
+PERK:Rapid shot:Required:
+PERK:Weapon maintenance:Required:
+PERK:Unarmed combat:Required:
+PERK:Crushing strike:
+PERK:Battle tactics:Required:
+OBJECT:Shock maul:
+OBJECT:Combat shotgun:
+OBJECT:Combat armour:
+EXIT:Alien hunter:
+DESCRIPTION:Judges are commanders of the Imperial law :
+DESCRIPTION:enforcement agencies. They judge whether or not a :
+DESCRIPTION:a suspect is guilty, and usually execute him right after that. :
+DESCRIPTION:Imperial law is based on the principle "guilty until proven :
+DESCRIPTION:innocent", only people with the right connections are tried in court.:
+
+NAME:Legendary gunfighter:
+TYPE:Elite:
+COLOUR:Snakebite leather:
+CC:20:40:
+RC:40:70:
+ST:20:0:
+TN:20:0:
+AG:40:60:
+IN:10:0:
+WP:20:0:
+FL:10:0:
+PERK:Weapon maintenance:Required:
+PERK:Marksman:Required:
+PERK:Quickload:Required:
+PERK:Fast draw:Required:
+PERK:Critical shot:Required:
+PERK:Unarmed combat:Required:
+PERK:Rapid shot:Required:
+OBJECT:Plasma pistol:
+OBJECT:Plasma rifle:
+OBJECT:Power knife:
+OBJECT:Light combat armour:
+EXIT:Alien hunter:
+EXIT:Bounty hunter:
+DESCRIPTION:The draws faster than his shadow type..:
+
+NAME:Master assassin:
+TYPE:Elite:
+COLOUR:Gray:
+CC:30:50:
+RC:40:60:
+ST:20:40:
+TN:20:40:
+AG:40:60:
+IN:20:40:
+WP:20:40:
+FL:20:40:
+PERK:Stealth:Required:
+PERK:Sneak attack:Required:
+PERK:Blademaster:Required:
+PERK:Alertness:Required:
+PERK:Critical strike:Required:
+PERK:Critical shot:Required:
+PERK:Marksman:Required:
+PERK:Spot weakness:Required:
+OBJECT:Sniper rifle:
+OBJECT:Venom blade:
+OBJECT:Light combat armour:
+DESCRIPTION:Imperial assassins are expert, cold-blooded killers. :
+DESCRIPTION:Their victims usually do not even notice them :
+DESCRIPTION:before it is too late.:
+
+NAME:Noble:
+TYPE:Basic:
+COLOUR:Purple:
+CC:10:0:
+RC:0:0:
+ST:0:0:
+TN:0:0:
+AG:0:0:
+IN:10:0:
+WP:0:0:
+FL:10:0:
+PERK:Enhanced parry:
+OBJECT:Imperial sword:
+OBJECT:Laser pistol:
+OBJECT:Credits:1000:
+EXIT:Officer:
+EXIT:Ganger:
+DESCRIPTION:The nobles are the ruling class of the Imperium.:
+
+NAME:Officer:
+TYPE:Basic:
+COLOUR:Army:
+CC:10:0:
+RC:10:0:
+ST:10:0:
+TN:10:0:
+AG:10:0:
+IN:10:0:
+WP:10:0:
+FL:10:0:
+PERK:Weapon maintenance:
+PERK:First aid:
+PERK:Grenadier:
+PERK:Leader:
+PERK:Battle tactics:
+OBJECT:Laser pistol:
+OBJECT:Sword:
+OBJECT:Flak armour:
+EXIT:Senior officer:
+DESCRIPTION:Officers exercise command over the Imperial military.:
+
+NAME:Pit champion:
+TYPE:Advanced:
+COLOUR:Tan:
+CC:30:50:
+RC:0:0:
+ST:30:50:
+TN:30:50:
+AG:30:50:
+IN:0:0:
+WP:20:40:
+FL:0:0:
+PERK:Crushing strike:Required:
+PERK:Critical strike:
+PERK:Rapid strike:
+PERK:Enhanced parry:
+PERK:Uncanny dodge:Required:
+PERK:Unarmed combat:Required:
+OBJECT:Chainsword:
+OBJECT:Flak armour:
+OBJECT:Bull:
+OBJECT:Stoic:
+EXIT:Pit legend:
+DESCRIPTION:If a pit fighter manages to survive, and wins a tournament, :
+DESCRIPTION:he becomes a pit champion. Pit champions are exceptional :
+DESCRIPTION:close combat fighters.:
+
+NAME:Pit fighter:
+TYPE:Basic:
+COLOUR:Tan:
+CC:20:0:
+RC:0:0:
+ST:10:0:
+TN:10:0:
+AG:10:0:
+IN:0:0:
+WP:10:0:
+FL:0:0:
+PERK:Crushing strike:
+PERK:Critical strike:
+PERK:Enhanced parry:
+PERK:Unarmed combat:
+OBJECT:Halberd:
+OBJECT:Bull:
+OBJECT:Stoic:
+EXIT:Pit champion:
+EXIT:Ganger:
+EXIT:Bounty hunter:
+DESCRIPTION:Pit fighting is very popular on many Imperial worlds. Pit :
+DESCRIPTION:fighters fight against each other, against beasts, or even :
+DESCRIPTION:against combat robots to entertain spectators. These fights :
+DESCRIPTION:often end deadly, so sooner or later a pit fighter is either :
+DESCRIPTION:highly skilled in close combat or dead.:
+
+NAME:Pit legend:
+TYPE:Elite:
+COLOUR:Tan:
+CC:40:60:
+RC:0:0:
+ST:40:60:
+TN:40:60:
+AG:30:50:
+IN:0:0:
+WP:30:50:
+FL:0:0:
+PERK:Crushing strike:Required:
+PERK:Critical strike:Required:
+PERK:Rapid strike:Required:
+PERK:Enhanced parry:Required:
+PERK:Uncanny dodge:Required:
+PERK:Unarmed combat:Required:
+OBJECT:Chainsword:
+OBJECT:Flak armour:
+OBJECT:Bull:
+OBJECT:Stoic:
+DESCRIPTION:There are few truely legendary pit fighters. The legends of the :
+DESCRIPTION:of the pit are the best close combat fighters in the Imperium.:
+
+NAME:Rogue trader:
+TYPE:Elite:
+COLOUR:Burgundy:
+CC:30:50:
+RC:30:50:
+ST:20:40:
+TN:30:50:
+AG:30:50:
+IN:30:50:
+WP:30:50:
+FL:30:50:
+PERK:Leader:
+PERK:Battle tactics:
+PERK:Alien technology:Required:
+PERK:Daemon lore:Required:
+PERK:Stealth:
+PERK:Fast draw:
+PERK:Weapon maintenance:
+OBJECT:Plasma pistol:
+OBJECT:Sword:
+OBJECT:Light combat armour:
+DESCRIPTION:Rogue traders supply their customers with 'special' (usually :
+DESCRIPTION:illegal) wares. However, rogue traders are not street dealers. :
+DESCRIPTION:Most have their own space ship, and command a crew of well :
+DESCRIPTION:trained experts. The prices rogue traders charge are outrageous, :
+DESCRIPTION:but they take great pride in being able to supply their :
+DESCRIPTION:customers with absolutely anything, no matter how exotic or :
+DESCRIPTION:illegal it might be.:
+
+NAME:Scarred ganger:
+TYPE:Advanced:
+COLOUR:Sienna:
+CC:20:40:
+RC:20:40:
+ST:20:40:
+TN:20:40:
+AG:20:40:
+IN:0:0:
+WP:10:0:
+FL:0:0:
+PERK:Fast draw:Required:
+PERK:Drug resistant:
+PERK:Unarmed combat:Required:
+PERK:Rapid shot:
+OBJECT:Automatic pistol:
+OBJECT:Knife:
+OBJECT:Leather armour:
+OBJECT:Stoic:
+EXIT:Gang leader:
+EXIT:Soldier:
+EXIT:Pit fighter:
+DESCRIPTION:Those who survive the life of a ganger for a while usually have :
+DESCRIPTION:bodies covered with scars from countless fights.:
+
+NAME:Scavenger:
+TYPE:Basic:
+COLOUR:Vermin brown:
+CC:10:0:
+RC:0:0:
+ST:0:0:
+TN:10:0:
+AG:10:0:
+IN:0:0:
+WP:0:0:
+FL:0:0:
+PERK:Immunity to disease:
+PERK:Immunity to poison:
+OBJECT:Axe:
+EXIT:Ganger:
+EXIT:Pit fighter:
+DESCRIPTION:Scavengers are the lowest of the low. They search the waste :
+DESCRIPTION:dumps for something useful, something to eat, or to sell. The :
+DESCRIPTION:toxic environment of the dumps makes those who survive highly :
+DESCRIPTION:resistant to poisons and diseases.:
+
+NAME:Senior officer:
+TYPE:Advanced:
+COLOUR:Army:
+CC:20:40:
+RC:20:40:
+ST:20:40:
+TN:20:40:
+AG:20:40:
+IN:20:40:
+WP:20:40:
+FL:20:40:
+PERK:Weapon maintenance:Required:
+PERK:First aid:
+PERK:Grenadier:
+PERK:Leader:Required:
+PERK:Battle tactics:Required:
+OBJECT:Laser pistol:
+OBJECT:Sword:
+OBJECT:Flak armour:
+EXIT:General:
+DESCRIPTION:Officers exercise command over the Imperial military. :
+
+NAME:Soldier:
+TYPE:Basic:
+COLOUR:Army:
+CC:10:0:
+RC:10:0:
+ST:10:0:
+TN:10:0:
+AG:10:0:
+IN:0:0:
+WP:10:0:
+FL:0:0:
+PERK:Weapon maintenance:
+PERK:First aid:
+PERK:Grenadier:
+OBJECT:Laser rifle:
+OBJECT:Knife:
+OBJECT:Flak armour:
+EXIT:Veteran soldier:
+EXIT:Pit fighter:
+
+NAME:Storm trooper:
+TYPE:Elite:
+COLOUR:Army:
+CC:30:50:
+RC:30:50:
+ST:30:50:
+TN:30:50:
+AG:30:50:
+IN:0:0:
+WP:30:50:
+FL:0:0:
+PERK:Weapon maintenance:Required:
+PERK:First aid:
+PERK:Grenadier:
+PERK:Marksman:
+PERK:Alertness:
+PERK:Quickload:
+PERK:Critical shot:
+PERK:Rapid shot:Required:
+OBJECT:Assault bolter:
+OBJECT:Assault armour:
+OBJECT:Power sword:
+DESCRIPTION:The storm troopers are the elite of the Imperial military.:
+
+NAME:Thief:
+TYPE:Basic:
+COLOUR:Sienna:
+CC:10:0:
+RC:10:0:
+ST:0:0:
+TN:0:0:
+AG:20:0:
+IN:10:0:
+WP:0:0:
+FL:10:0:
+PERK:Stealth:
+PERK:Alertness:
+PERK:Uncanny dodge:
+PERK:Spot trap:
+OBJECT:Automatic pistol:
+OBJECT:Knife:
+EXIT:Ganger:
+EXIT:Alien hunter:
+
+NAME:Veteran soldier:
+TYPE:Advanced:
+COLOUR:Army:
+CC:20:40:
+RC:20:40:
+ST:20:40:
+TN:20:40:
+AG:20:40:
+IN:0:0:
+WP:20:40:
+FL:0:0:
+PERK:Weapon maintenance:Required:
+PERK:First aid:
+PERK:Grenadier:
+PERK:Marksman:
+PERK:Quickload:
+OBJECT:Laser rifle:
+OBJECT:Knife:
+OBJECT:Flak armour:
+EXIT:Storm trooper:
+EXIT:Pit fighter:
+
+NAME:Wytch hunter:
+TYPE:Elite:
+COLOUR:Gold:
+CC:20:40:
+RC:40:60:
+ST:20:40:
+TN:20:40:
+AG:30:50:
+IN:30:50:
+WP:30:50:
+FL:30:50:
+PERK:Stealth:Required:
+PERK:Alertness:Required:
+PERK:Daemon lore:Required:
+PERK:Psychic resistance:
+PERK:Spot weakness:Required:
+PERK:Marksman:Required:
+PERK:Critical shot:Required:
+PERK:Sneak attack:Required:
+OBJECT:Sniper rifle:
+OBJECT:Power knife:
+OBJECT:Light combat armour:
+DESCRIPTION:Wytch hunters are inquisitors who have specialised in hunting a :
+DESCRIPTION:special kind of prey - rogue psykers. Evoking the powers of the :
+DESCRIPTION:Warp without Imperial sanction is a crime punishable by death :
+DESCRIPTION:and the wytch hunters make sure that no wytch escapes just :
+DESCRIPTION:punishment. Wytch hunters prefer to kill the wytch before he or :
+DESCRIPTION:she has even realized what is going on, because giving the wytch :
+DESCRIPTION:time to react is often deadly.:
+
+NAME:Xenoscourge:
+TYPE:Elite:
+COLOUR:Gold:
+CC:30:50:
+RC:30:50:
+ST:30:50:
+TN:30:50:
+AG:30:50:
+IN:30:50:
+WP:30:50:
+FL:30:50:
+PERK:Stealth:
+PERK:Alertness:
+PERK:Daemon lore:Required:
+PERK:Alien technology:Required:
+PERK:Grenadier:
+PERK:Weapon maintenance:Required:
+PERK:Spot weakness:
+PERK:Rapid shot:
+PERK:Critical shot:
+PERK:Battle tactics:
+OBJECT:Plasma rifle:
+OBJECT:Power armour:
+OBJECT:Power sword:
+DESCRIPTION:Xenoscourges are inquisitors who have specialised in fighting :
+DESCRIPTION:aliens, and such missions often take the form of military :
+DESCRIPTION:commando operations. Xenoscourges rely on heavy armour, :
+DESCRIPTION:powerful weapons, and their excellent battlefield skills :
+DESCRIPTION:to fight off any alien threat.:

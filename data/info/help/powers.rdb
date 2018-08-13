@@ -1,0 +1,46 @@
+#
+# Psychic powers
+#
+
+NAME:Regenerate:
+DESCRIPTION:Reduces the target's injuries by 2D10.:
+
+NAME:Reactivate:
+DESCRIPTION:Cures stunning.:
+
+NAME:Warp strength:
+DESCRIPTION:Increases the target's strength by 10D10 percent :
+DESCRIPTION:of its unmodified strength.:
+
+NAME:Purify blood:
+DESCRIPTION:Cures poisoning.:
+
+NAME:Purge plague:
+DESCRIPTION:Cures disease.:
+
+NAME:Mind view:
+DESCRIPTION:Uncovers all unnoticed enemies who have minds for a moment.:
+
+NAME:Psychic shriek:
+DESCRIPTION:The psyker musters the power of his mind and launches it into :
+DESCRIPTION:the enemy's brain, overloading his senses and nervous system. :
+DESCRIPTION:The target must take a toughness test. If the test fails the :
+DESCRIPTION:target becomes stunned for 10 phases.:
+
+NAME:Terrify:
+DESCRIPTION:The psyker places images of the target's worst nightmares :
+DESCRIPTION:into its mind. The target must take a Will Power test. If :
+DESCRIPTION:the test fails, the target becomes terrified for 20 phases.:
+
+NAME:Psychic shield:
+DESCRIPTION:The psyker summons a corona of psychic power to ward away any :
+DESCRIPTION:incoming shots and blows. The psyker gets 1D10 extra armour :
+DESCRIPTION:points. Psychic shield lasts D50 + 50 phases.:
+
+NAME:Banishment:
+DESCRIPTION:A psyker can attempt to banish a daemonic creature. The target must :
+DESCRIPTION:take a toughness test. If the test fails the target suffers 2D6+4 :
+DESCRIPTION:points damage. If the test fails by more than 20 points, the :
+DESCRIPTION:physical form of the daemonic creature is instantly destroyed i.e. :
+DESCRIPTION:daemonic creatures with low toughness values are easier to banish :
+DESCRIPTION:than those with high ones.:

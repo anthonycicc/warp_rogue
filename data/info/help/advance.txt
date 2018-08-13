@@ -1,0 +1,26 @@
+Contents
+
+  Advancement
+  Gaining Experience
+
+
+= Advancement =
+
+All character advancement is based on experience points (EP), these points are gained while playing, and can be spent on the character advancement screen to improve a character by buying stat increasements, new perks, or psychic powers. Which character enhancements you can buy depends on the career of the character. Characters can change their careers; career changes also costs EP. The player character can only choose a basic career during character generation. The difference between basic and advanced careers is that you need to complete another career to reach an advanced career. Advanced careers usually offer more powerful perks and higher stat increasements than basic careers. Elite careers are careers you can only reach by completing an advanced career, they are even more powerful than advanced careers. Entering advanced or elite careers also effects a character's power level. 
+
+= Gaining Experience =
+
+Every time a character kills an enemy he receives an EP reward. How many EPs a character receives depends his power level compared to the power level of the defeated enemy. In the following table a positive difference means that the defeated enemy was stronger, while a negative difference means that the enemy was weaker.
+
+
+Power Difference | EP Reward |  
+-----------------|-----------|
+  3              |   50      |  
+  2              |   40      | 
+  1              |   30      |   
+  0              |   20      |  
+ -1              |   15      |
+ -2              |   10      |
+ -3              |    5      |
+
+Only members of the player's party can gain experience. If you have more than one character in your party every kill is treated as an accomplishment of the entire party, this means that every party member will receive an EP reward as if he killed the defeated enemy i.e. it is not imporant who kills the enemy. This system allows all kinds of party builds. For example you could have a psyker in your party who completely focuses on healing and support tasks.

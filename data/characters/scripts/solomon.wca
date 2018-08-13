@@ -1,0 +1,128 @@
+~
+
+  Character Script: Judge Solomon
+
+  Solomon is uptight, stern, and mildly depressed. 
+  He has no illusions about the nature of his job.
+~
+
+
+
+~
+
+  Death Script
+
+~
+if $KILLED = 'Yes'
+
+  ~ do nothing ~
+
+end_if
+
+~ Death Script End ~
+
+
+
+
+
+~
+
+  Dialogue Script
+
+~
+if $TRIGGERED = 'Yes'
+
+  ~
+    collecting dialogue determining data
+  ~
+  quest_status 'Fat Vince Wanted' $vince_quest_status
+
+
+
+  ~
+
+    Quest: Fat Vince Wanted
+
+  ~
+  if $vince_quest_status != 'Completed'
+
+    ~
+      quest not given - give quest
+    ~
+    if $vince_quest_status = ''
+
+      dialogue_say ''
+
+      dialogue_add_option 'Anyone on the wanted list?'
+      dialogue_add_option 'Bye.'
+
+      dialogue_choice $choice
+
+      if $choice = 'Bye.'
+        end
+      end_if
+
+      dialogue_say 'Vince D. Weller, also known as Fat Vince. He is the leader'
+      dialogue_say ' of the Hive Lords, a gang which controls the second level '
+      dialogue_say 'of this hive. Fat Vince is wanted for multiple cases of '
+      dialogue_say 'murder and various other crimes. Reward is 3000 credits. '
+      dialogue_say 'Dead or alive. '
+    
+      quest_set_status 'Fat Vince Wanted' 'Given'
+
+      dialogue_add_option 'Sounds interesting..'
+    
+      dialogue_choice $choice
+
+      end
+
+    end_if
+  
+
+    ~ 
+      quest completed, but not rewarded 
+    ~
+    if $vince_quest_status = 'Completed, Not Rewarded'
+
+      dialogue_say 'So you have really managed to hunt him down.. '
+      dialogue_say 'The Council of Judges is pleased. Here your reward '
+      dialogue_say '[He gives you 3000 credits]. Always follow the law. '
+    
+      add_money $ACTIVE_CHARACTER 3000
+
+      quest_set_status 'Fat Vince Wanted' 'Completed'
+
+      dialogue_add_option 'Of course.'
+  
+      dialogue_choice $choice
+  
+      end
+    
+    end_if
+
+
+    ~ 
+      quest not completed 
+    ~
+    dialogue_say 'Fat Vince is still wanted.'
+
+    dialogue_add_option 'Ok, bye.'
+    
+    dialogue_choice $choice
+
+    end
+
+  end_if
+
+
+  dialogue_say 'What do you want?'
+  
+  dialogue_add_option 'Nothing. Bye.'
+  
+  dialogue_choice $choice
+
+
+end_if
+
+~ Dialogue Script End ~
+

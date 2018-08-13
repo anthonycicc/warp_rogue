@@ -1,0 +1,30 @@
+~
+
+  Game Start Script
+
+~
+
+
+
+~
+  party generation
+~
+generate_player_character
+
+
+
+~
+  faction relationship setup
+~
+faction_set_relationship 'Player' 'Chaos' 'Hostile'
+faction_set_relationship 'Player' 'Mutant rebels' 'Hostile'
+faction_set_relationship 'Player' 'Ratkin' 'Hostile'
+faction_set_relationship 'Player' 'Beasts' 'Hostile'
+faction_set_relationship 'Player' 'Plants' 'Hostile'
+
+
+~
+  move party to starting location
+~
+move_party_to_area 7 6 34 'Elevator'
+

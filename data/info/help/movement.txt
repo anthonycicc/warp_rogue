@@ -1,0 +1,14 @@
+Contents
+
+  Running
+
+
+Normally characters can move one step/one tile for one action. There is an exception, though (see below).
+
+= Running =
+
+If a character's Agility stat is high enough he can run and cross multiple tiles in a single phase. A character can run X tiles, where X is equal to the character's Agility divided by 30 (rounding up).
+
+EXAMPLE
+
+A character with Agility 40 can run 2 steps. A character with Agility 93 can run 4 steps. For a character with an Agility stat of 30 or less running is pointless, because he still won't be able to move more than one step.

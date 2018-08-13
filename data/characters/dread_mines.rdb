@@ -1,0 +1,165 @@
+#
+#
+# Dread Mines Characters
+#
+#
+
+
+
+#
+# Plants
+#
+NAME:Ash mold:
+FACTION:Plants:
+GENDER:N:
+SYMBOL:Mushroom:
+COLOUR:Asparagus:
+POWER_LEVEL:1:
+CC:40:
+RC:0:
+ST:0:
+TN:1:
+AG:0:
+IN:0:
+WP:0:
+FL:0:
+ATTRIBUTE:Plant:
+ATTRIBUTE:No unarmed attack:
+OBJECT:Ash mold spores:
+
+
+
+#
+# Chaos infiltrators
+#
+NAME:Demagogue:
+FACTION:Chaos:
+GENDER:M:
+SYMBOL:C:
+COLOUR:Gold:
+POWER_LEVEL:1:
+CC:32:
+RC:35:
+ST:38:
+TN:30:
+AG:40:
+IN:50:
+WP:35:
+FL:60:
+OBJECT:Laser pistol:
+OBJECT:Credits:100:
+DESCRIPTION:A professional agitator and preacher working for the :
+DESCRIPTION:forces of Chaos.:
+
+NAME:Bronstein:
+FACTION:Chaos:
+GENDER:M:
+SYMBOL:C:
+COLOUR:Army:
+POWER_LEVEL:2:
+CC:42:
+RC:55:
+ST:38:
+TN:40:
+AG:40:
+IN:70:
+WP:55:
+FL:50:
+PERK:Leader:
+PERK:Battle tactics:
+PERK:Weapon maintenance:
+OBJECT:Revolver:
+OBJECT:Flak armour:
+ATTRIBUTE:Unique:
+DESCRIPTION:Bronstein has dedicated his life to bringing down the Imperium - :
+DESCRIPTION:by all means necessary! :
+
+NAME:Infiltrator:
+FACTION:Chaos:
+GENDER:M:
+SYMBOL:C:
+COLOUR:Gray:
+POWER_LEVEL:1:
+CC:40:
+RC:32:
+ST:37:
+TN:30:
+AG:48:
+IN:42:
+WP:41:
+FL:51:
+PERK:Stealth:
+PERK:Sneak attack:
+OBJECT:Knife:
+OBJECT:Credits:50:
+DESCRIPTION:A secret agent of Chaos.:
+
+
+#
+# Mutant rebels
+#
+
+NAME:Mutant miner:
+FACTION:Mutant rebels:
+GENDER:M:
+SYMBOL:R:
+COLOUR:Radioactive:
+POWER_LEVEL:1:
+CC:32:
+RC:30:
+ST:38:
+TN:30:
+AG:28:
+IN:20:
+WP:30:
+FL:20:
+OBJECT:Pick axe:
+DESCRIPTION:Mutants have no rights in the Imperium. Biological weapons :
+DESCRIPTION:and massive pollution have made mutations a serious issue. :
+DESCRIPTION:Preserving genetic purity is seen as vital for the survivial :
+DESCRIPTION:of mankind. Mutants are either killed, or used as work slaves. :
+DESCRIPTION:Mutant riots are common in the Imperium.:
+
+NAME:Armed mutant:
+FACTION:Mutant rebels:
+GENDER:M:
+SYMBOL:R:
+COLOUR:Radioactive:
+POWER_LEVEL:1:
+CC:32:
+RC:30:
+ST:38:
+TN:30:
+AG:28:
+IN:20:
+WP:30:
+FL:20:
+OBJECT:Shotgun:
+DESCRIPTION:Mutants have no rights in the Imperium. Biological weapons :
+DESCRIPTION:and massive pollution have made mutations a serious issue. :
+DESCRIPTION:Preserving genetic purity is seen as vital for the survivial :
+DESCRIPTION:of mankind. Mutants are either killed, or used as work slaves. :
+DESCRIPTION:Mutant riots are common in the Imperium.:
+
+NAME:Gregor:
+FACTION:Mutant rebels:
+GENDER:M:
+SYMBOL:R:
+COLOUR:Vermin brown:
+POWER_LEVEL:2:
+CC:40:
+RC:59:
+ST:39:
+TN:54:
+AG:52:
+IN:60:
+WP:74:
+FL:30:
+ATTRIBUTE:Unique:
+OBJECT:Scorcher pistol:
+SCRIPT:gregor.wca:
+DESCRIPTION:Gregor is a horribly deformed mutant, looking like a mixture :
+DESCRIPTION:between a man and a bug. He is leading a group of rebellious mutants. :
+
+
+

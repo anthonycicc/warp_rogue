@@ -1,0 +1,33 @@
+#
+# Beast objects
+#
+
+
+
+########################### Close combat weapons ###########################
+
+NAME:Corpse bacteria:
+TYPE:Close combat weapon:
+DAMAGE:0:0:0:
+REACH:1:
+ATTRIBUTE:Disease:
+ATTRIBUTE:Environmental:
+ATTRIBUTE:Inherent:
+ATTRIBUTE:Cannot parry:
+ATTRIBUTE:Cannot be parried:
+DESCRIPTION:Corpse bacteria.:
+
+NAME:Corpse beetle fangs:
+TYPE:Close combat weapon:
+CONDITION:10:
+DAMAGE:2:4:
+REACH:1:
+ATTRIBUTE:Inherent:
+ATTRIBUTE:Cannot parry:
+ATTRIBUTE:Disease:
+
+
+
+
+
+

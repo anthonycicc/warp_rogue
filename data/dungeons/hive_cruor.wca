@@ -1,0 +1,86 @@
+~
+
+  Dungeon Script: Hive Cruor
+
+~
+
+
+
+~
+  this dungeon is the 'home base' of player.
+
+  all levels except the special ones are filled with randomly 
+  generated characters who can be recruited.
+
+  special levels
+ 
+  level 9: the government level, home of the quest giver NPCs
+  level 8: the commercial level, home of the trader NPCs
+  level 2: Hive Lords level
+~
+
+
+~
+
+  dungeon generation
+
+~
+if $GENERATION = 'Yes'
+
+  ~
+    level map generation
+  ~
+  dungeon_set_wall 'Metal wall'
+  dungeon_set_floor 'Metal floor'
+  dungeon_set_connections 'Elevator' 'Elevator'
+
+  ~ no sludge on the upper levels ~
+  if $LEVEL < 8
+    dungeon_set_pools 'Chemical sludge'
+  end_if
+
+  dungeon_set_gate_level 0
+  dungeon_set_environment 'Smog'
+
+  ~ ground level: defenses and different environment ~
+  if $LEVEL = 0
+    dungeon_set_obstacles 'Barbed wire' 'Barricade'
+    dungeon_set_environment 'Ash wastes'
+  end_if
+
+  dungeon_generate
+
+
+  ~
+    character spawning
+  ~
+  if $LEVEL = 9
+
+    spawn_character 'Bismarck'
+    spawn_character 'Institoris'
+    spawn_character 'Guderian'
+    spawn_character 'Solomon'
+
+  else_if $LEVEL = 8
+
+    spawn_character 'Travus'
+    spawn_character 'Schweitzer'
+    spawn_character 'Mammon'
+
+  else_if $LEVEL = 2
+
+    spawn_character 'Fat Vince'
+
+    spawn_character 'Hive lord' 9
+
+  else
+  
+    spawn_character 'RANDOM_RECRUITABLE' 10
+
+  end_if
+
+
+end_if
+
+
+

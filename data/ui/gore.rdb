@@ -1,0 +1,28 @@
+#
+# Gore features
+#
+
+FEATURE:Plant parts:
+SYMBOL:%:
+COLOUR:Vermin brown:
+
+FEATURE:Machine parts:
+SYMBOL:%:
+COLOUR:Metal:
+
+FEATURE:Poisoned corpse:
+SYMBOL:%:
+COLOUR:Poison green:
+
+FEATURE:Blood:
+COLOUR:Blood:
+
+FEATURE:Body part:
+SYMBOL:`:
+COLOUR:Blood:
+
+FEATURE:Corpse:
+SYMBOL:Corpse:
+COLOUR:Blood:
+
+

@@ -1,0 +1,121 @@
+~
+
+  Character Script: Travus
+
+~
+
+
+
+
+
+~
+
+  Death Script
+
+~
+if $KILLED = 'Yes'
+
+  ~ do nothing ~
+
+end_if
+
+~ Death Script End ~
+
+
+
+
+
+~
+
+  Dialogue Script
+
+~
+if $TRIGGERED = 'Yes'
+
+~
+  collecting dialogue determining data
+~
+
+
+~
+  the passive character greets
+~
+dialogue_say 'Hello.'
+
+
+
+~
+  dialogue loop
+~
+loop
+
+
+  if $choice = 'Bye.'
+    break
+  end_if
+
+
+  ~
+    the active character's dialogue options
+  ~
+  dialogue_add_option 'I want to buy something.'
+  dialogue_add_option 'I have something to sell.'
+  dialogue_add_option 'Bye.'
+
+
+  ~
+    dialogue choice
+  ~
+  dialogue_choice $choice
+
+
+  ~
+    the passive character replies
+  ~
+  if $choice = 'I want to buy something.'
+
+    shop_add 'Revolver'
+    shop_add 'Automatic pistol'
+    shop_add 'Automatic rifle'
+    shop_add 'Shotgun'
+    shop_add 'Sawn-off shotgun'
+    shop_add 'Combat shotgun'
+    shop_add 'Sniper rifle'
+    shop_add 'Needle pistol'
+    shop_add 'Needle rifle'
+    shop_add 'Laser pistol'
+    shop_add 'Laser rifle'
+    shop_add 'Scorcher pistol'
+    shop_add 'Scorcher rifle'
+    shop_add 'Knife'
+    shop_add 'Sword'
+    shop_add 'Axe'
+    shop_add 'Halberd'
+    shop_add 'Venom blade'
+    shop_add 'Chainsword'
+    shop_add 'Chainaxe'
+    shop_add 'Eviscerator'
+    shop_add 'Neural whip'
+    shop_add 'Shock maul'
+    shop_add 'Force sword'
+    shop_add 'Force rod'
+    shop_add 'Force halberd'
+    shop_add 'Leather armour'
+    shop_add 'Flak armour'
+    shop_add 'Combat armour'
+    shop_set_price_level 100
+    shop_buy_mode $ACTIVE_CHARACTER
+
+  else_if $choice = 'I have something to sell.'
+
+    shop_sell_mode $ACTIVE_CHARACTER
+
+  end_if
+
+
+end_loop
+
+end_if
+
+~ Dialogue Script End ~
+

@@ -1,0 +1,166 @@
+~
+
+  Character Script: Inquisitor Institoris
+
+~
+
+
+
+~
+
+  Death Script
+
+~
+if $KILLED = 'Yes'
+
+  ~ do nothing ~
+
+end_if
+
+~ Death Script End ~
+
+
+
+
+
+~
+
+  Dialogue Script
+
+~
+if $TRIGGERED = 'Yes'
+
+  ~
+    collecting dialogue determining data
+  ~
+  quest_status 'Retrieve the Hammer of Fate' $hammer_quest_status
+  
+
+
+  ~
+
+    Quest: Retrieve the Hammer of Fate
+
+  ~
+  
+  ~ are we done with this quest? ~
+  if $hammer_quest_status = 'Completed'
+    store $hammer_quest_done 'Yes'
+  else_if $hammer_quest_status = 'Rejected'
+    store $hammer_quest_done 'Yes'
+  else
+    store $hammer_quest_done 'No'
+  end_if
+
+  if $hammer_quest_done = 'No'
+
+    ~
+      quest not given - give quest
+    ~
+    if $hammer_quest_status = ''
+
+      dialogue_say 'Are you look for looking for work?'
+
+      dialogue_add_option 'Yes.'
+      dialogue_add_option 'No.'
+
+      dialogue_choice $choice
+
+      if $choice = 'No.'
+        end
+      end_if
+
+      dialogue_say 'I want you the retrieve a sacred artifact. '
+      dialogue_say 'It is called the Hammer of Fate. The hammer must be '
+      dialogue_say 'somewhere in the ruins of Hive Melkor. The ruins are '
+      dialogue_say 'populated by Ratkin, and an allied plague cult. '
+      dialogue_say 'If you bring me the hammer, the Inquisition will show its '
+      dialogue_say 'gratitude.'
+
+      dialogue_add_option 'Ok, I will do it.'
+      dialogue_add_option 'Ratkin? A plague cult?! No way!'
+    
+      dialogue_choice $choice
+
+      if $choice = 'Ratkin? A plague cult?! No way!'
+
+        quest_set_status 'Retrieve the Hammer of Fate' 'Rejected'
+
+        end
+
+      end_if
+
+      quest_set_status 'Retrieve the Hammer of Fate' 'Given'
+  
+      dialogue_say 'Hive Melkor is south west of here. Hurry, '
+      dialogue_say 'they might try to destroy the hammer! '
+      
+      dialogue_add_option '...'
+
+      dialogue_choice $choice
+
+      end
+
+    end_if
+  
+
+    ~
+      quest active
+    ~
+
+    ~ hammer found? ~
+    has_object $ACTIVE_CHARACTER 'Hammer of Fate' $has_hammer
+
+    dialogue_say 'Have you found the hammer?'
+  
+    if $has_hammer = 'Yes'
+      dialogue_add_option 'Yes, I have.'
+      dialogue_add_option 'No, I have not found it.'
+    end_if
+    dialogue_add_option 'I am still looking for it.'
+
+    dialogue_choice $choice
+
+    if $choice = 'I am still looking for it.'
+      end
+    end_if
+  
+    if $choice = 'Yes, I have.'
+
+      dialogue_say '[He takes the hammer.] You have done the Emperor '
+      dialogue_say 'a great service. Here is your reward [He gives you '
+      dialogue_say '1400 credits]. For the Emperor!'
+
+      remove_object $ACTIVE_CHARACTER 'Hammer of Fate'
+      add_money $ACTIVE_CHARACTER 1400
+    
+      dialogue_add_option 'For the Emperor!'
+
+    else_if $choice = 'No, I have not found it.'
+
+      dialogue_say '... You aren\'t lying to me, are you? '
+      dialogue_say 'Never forget that the eyes and ears of the '
+      dialogue_say 'Inquisition are everywhere!'
+
+      dialogue_add_option '...' 
+    
+    end_if
+
+    dialogue_choice $choice
+
+    quest_set_status 'Retrieve the Hammer of Fate' 'Completed'
+  
+    end
+
+  end_if
+
+  dialogue_say 'What do you want?'
+
+  dialogue_add_option 'Nothing. Bye.'
+
+  dialogue_choice $choice
+
+end_if
+
+~ Dialogue Script End ~
+

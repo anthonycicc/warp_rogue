@@ -1,0 +1,192 @@
+#
+# Keybindings
+#
+
+COMMAND:Up:
+KEY:8:
+
+COMMAND:Down:
+KEY:2:
+
+COMMAND:Left:
+KEY:4:
+
+COMMAND:Right:
+KEY:6:
+
+COMMAND:Up left:
+KEY:7:
+
+COMMAND:Up right:
+KEY:9:
+
+COMMAND:Down left:
+KEY:1:
+
+COMMAND:Down right:
+KEY:3:
+
+COMMAND:Ok:
+KEY:Enter:
+
+COMMAND:Exit:
+KEY:Esc:
+
+COMMAND:Drop:
+KEY:d:
+
+COMMAND:Info:
+KEY:i:
+
+COMMAND:Use/Abort use:
+KEY:u:
+
+COMMAND:Reroll:
+KEY:r:
+
+COMMAND:Advancement:
+KEY:a:
+
+COMMAND:Equipment:
+KEY:e:
+
+COMMAND:Psychic powers:
+KEY:p:
+
+COMMAND:Nearest enemy:
+KEY:n:
+
+COMMAND:Advanced target mode:
+KEY:a:
+
+COMMAND:Attack:
+KEY:a:
+
+COMMAND:Trigger:
+KEY:t:
+
+COMMAND:Inventory screen:
+KEY:I:
+
+COMMAND:Evoke psychic power:
+KEY:e:
+
+COMMAND:Tactical command:
+KEY:x:
+
+COMMAND:Character screen:
+KEY:C:
+
+COMMAND:Look:
+KEY:l:
+
+COMMAND:Reload weapon:
+KEY:r:
+
+COMMAND:Unjam weapon:
+KEY:u:
+
+COMMAND:Switch weapons:
+KEY:s:
+
+COMMAND:Run:
+KEY:n:
+
+COMMAND:Use perk:
+KEY:p:
+
+COMMAND:Journal:
+KEY:J:
+
+COMMAND:Game controls:
+KEY:G:
+
+COMMAND:Help:
+KEY:?:
+
+COMMAND:Current tile:
+KEY:5:
+
+COMMAND:Recover/Wait:
+KEY:.:
+
+COMMAND:Macro 1:
+KEY:F1:
+
+COMMAND:Macro 2:
+KEY:F2:
+
+COMMAND:Macro 3:
+KEY:F3:
+
+COMMAND:Macro 4:
+KEY:F4:
+
+COMMAND:Macro 5:
+KEY:F5:
+
+COMMAND:Macro 6:
+KEY:F6:
+
+COMMAND:Macro 7:
+KEY:F7:
+
+COMMAND:Macro 8:
+KEY:F8:
+
+COMMAND:Macro 9:
+KEY:F9:
+
+COMMAND:Macro 10:
+KEY:F10:
+
+COMMAND:Macro 11:
+KEY:F11:
+
+COMMAND:Macro 12:
+KEY:F12:
+
+COMMAND:List:
+KEY:*:
+
+COMMAND:S:
+KEY:0:
+
+COMMAND:SA:
+KEY:1:
+
+COMMAND:A:
+KEY:2:
+
+COMMAND:Debug:
+KEY:#:
+
+COMMAND:Rename:
+KEY:r:
+
+COMMAND:Career:
+KEY:c:
+
+COMMAND:Character 1:
+KEY:i:
+
+COMMAND:Character 2:
+KEY:j:
+
+COMMAND:Character 3:
+KEY:k:
+
+COMMAND:Page up:
+KEY:Page Up:
+
+COMMAND:Page down:
+KEY:Page Down:
+
+COMMAND:Additional information:
+KEY:i:
+
+COMMAND:Buy:
+KEY:Enter:
+
+COMMAND:Manufacture:
+KEY:Enter:

@@ -1,0 +1,166 @@
+The RDB Format
+
+
+Contents
+
+  Origin 
+  Basics
+  Comments
+  Empty Lines
+  Misc. Notes
+  Implementation
+  Example Code
+
+
+Origin
+
+'RDB' is short  for 'Roguelike DataBase'. The format was inspired by Angbands's edit files. I developed the RDB format while working on a roguelike game called Warp Rogue. I wanted to store all external game data in a standard format to make the data parsing and writing code cleaner and less error-prone. The obvious alternative to inventing my own format and writing my own library to handle it was to use XML, but I do not like that format and I did not need 90% of its functionality.
+
+ 
+Basics
+
+Like the name suggests RDB files are database files. They are very primitive ones, tough. A .rdb file is nothing but a collection of fields and the data they contain. .rdb files are text files and every field + data entry is written as one line of text e.g.
+
+NAME:Troll:
+
+'NAME' is the field name token, 'Troll' is the data token. As you can see .rdb files use ':' as the token delimiter. If you want a ':' character to be parsed as data you need to put the override character '\' in front of it e.g.:
+
+PROMPT:Password\:: 
+
+If you want the override character to be parsed as data you must prefix it with itself e.g.:
+
+PATH:C:\\WINDOWS:
+
+While the examples above shows only one data token, a field can have multiple data tokens e.g.:
+
+DAMAGE:2:6:
+
+It is also possible to use empty "tokens" e.g.:
+
+SECTOR::
+
+In this case asking for the data token would return "" (a string of length 0)
+
+
+Comments
+
+Comments in RDB files are all lines beginning with '#' e.g.:
+
+# This is a comment
+
+Such comment lines are ignored.
+
+If you want to start a field name with '#', you have to use the override character e.g.:
+
+\#31:foo:
+
+
+Empty Lines
+
+The parser ignores all "empty" lines i.e. lines that contain nothing but SPACE, TAB, and NEWLINE characters.
+
+
+Misc. Notes
+
+When I write "text" I mean ASCII text. 
+
+To determine what constitutes a "new line" a RDB parser should handle Windows, UNIX, and Mac-style new line characters.
+
+
+Implementation
+
+I have written my own library to handle the RDB format. It is a Public Domain pure ISO C library.
+
+The current implementation was not designed to process more than one file at a time. If you try to do that things will break.
+
+
+Example Code
+
+/*
+ *
+ * RDB example code
+ *
+ * This code only shows a few basic functions of the RDB library
+ *
+ */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+#include "rdb.h"
+
+
+#define EXAMPLE_FILE	"example.rdb"
+
+
+static void		write_rdb_file(void);
+
+static void		read_rdb_file(void);
+
+
+
+/*
+ * demonstrates writing a RDB file
+ */
+static void write_rdb_file(void)
+{
+
+	/* opening a RDB file for writing */
+	rdb_open(EXAMPLE_FILE, RDB_WRITE);
+	
+	/* writing a field + data entry */
+	rdb_write_field_name("NAME"); /* writing field name token */ 
+	rdb_write_string("Troll"); /* writing data token */
+
+	/* writing another field + data entry */
+	rdb_write_field_name("HP");
+	rdb_write_integer(80);
+
+	/* closing the RDB file */
+	rdb_close();
+}
+
+
+
+/*
+ * demonstrates reading a RDB file
+ */
+static void read_rdb_file(void)
+{
+
+	/* opening a RDB file for reading */
+	rdb_open(EXAMPLE_FILE, RDB_READ);
+	
+	/* reading all fields */
+	while (rdb_next_field()) { 
+	
+		/* printing the field name + the first data token */
+		printf("%s: %s\n", rdb_field_name(), rdb_data_token(0));
+	}
+
+	/* closing the RDB file */
+	rdb_close();
+}
+
+
+
+/*
+ * MAIN
+ */
+int main(void)
+{
+
+	write_rdb_file();
+
+	read_rdb_file();	
+
+        return EXIT_SUCCESS;
+}
+
+
+
+~ copx
+
+

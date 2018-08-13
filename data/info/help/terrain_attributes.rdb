@@ -1,0 +1,20 @@
+#
+# Terrain attributes
+#
+
+NAME:Air:
+DESCRIPTION:The terrain is 'air', meaning very high above the ground. :
+DESCRIPTION:Characters who step on 'air' terrain will fall down and die.:
+
+NAME:Blocks line of sight:
+DESCRIPTION:The terrain blocks the line of sight.:
+
+NAME:Causes disease:
+DESCRIPTION:Stepping on the terrain will disease characters, unless they are :
+DESCRIPTION:protected against the effect somehow.:
+
+NAME:Dangerous:
+DESCRIPTION:The terrain is dangerous, at least for some characters.:
+
+NAME:Impassable:
+DESCRIPTION:The terrain is impassable.:

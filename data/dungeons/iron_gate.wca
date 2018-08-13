@@ -1,0 +1,112 @@
+~
+
+  Dungeon Script: Fort Iron Gate
+
+~
+
+
+
+~
+
+  dungeon generation
+
+~
+if $GENERATION = 'Yes'
+
+
+  ~
+    level map generation
+  ~
+
+  ~ level 0 - 2 are fort levels ~
+  if $LEVEL < 3
+    
+    dungeon_set_wall 'Metal wall'
+    dungeon_set_floor 'Metal floor'
+    dungeon_set_connections 'Way down' 'Way up'
+
+    ~ ground level  ~
+    if $LEVEL = 0
+
+      dungeon_set_gate_level 0
+      dungeon_set_environment 'Ash wastes'
+      dungeon_set_obstacles 'Barbed wire' 'Barbed wire'
+
+    ~ all other levels are underground ~
+    else
+
+      dungeon_set_environment 'Rock floor' 'Rock'
+
+    end_if
+
+    dungeon_generate
+
+  ~ level 3 - 6 are cave levels ~
+  else
+
+    cave_set_type 'Standard'
+    cave_set_wall 'Rock'
+    cave_set_floor 'Rock floor'
+    cave_set_connections 'Way down' 'Way up'
+    cave_set_environment 'Rock floor' 'Rock' 'Rock floor' 'Rock' 'Rock floor' 'Rock' 'Rock floor' 'Rock'
+
+    cave_generate
+
+    area_add_random_gore
+
+  end_if
+
+
+
+  ~
+    character spawning
+  ~
+  if $LEVEL = 6
+
+    spawn_character 'Colonel Kurtz'
+
+    randomiser_add 'Renegade soldier' 100
+    randomiser_add 'Fury' 100
+
+    randomiser_spawn_characters 9
+
+  else_if $LEVEL = 5
+
+    randomiser_add 'Renegade soldier' 100
+    randomiser_add 'Fury' 100
+
+    randomiser_spawn_characters 10
+
+  else_if $LEVEL = 4
+
+    randomiser_add 'Renegade soldier' 100
+    randomiser_add 'Fury' 100
+
+    randomiser_spawn_characters 10
+
+  else_if $LEVEL = 3
+
+    randomiser_add 'Renegade soldier' 100
+    randomiser_add 'Fury' 100
+
+    randomiser_spawn_characters 10
+
+  else_if $LEVEL = 2
+
+    spawn_character 'Renegade soldier' 9
+    spawn_character 'Fury'
+
+  else_if $LEVEL = 1
+
+    spawn_character 'Renegade soldier' 10
+
+  else_if $LEVEL = 0
+
+    spawn_character 'Renegade soldier' 10
+
+  end_if
+
+
+end_if
+
+

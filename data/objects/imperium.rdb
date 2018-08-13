@@ -1,0 +1,940 @@
+#
+# Imperium objects
+#
+
+
+
+
+
+########################### Ranged combat weapons ###########################
+
+#
+# Conventional weapons
+#
+
+NAME:Revolver:
+TYPE:Ranged combat weapon:
+SUBTYPE:Pistol:
+COLOUR:Silver:
+SYMBOL:/:
+CONDITION:20:
+VALUE:80:
+WEIGHT:20:
+DAMAGE:2:6:
+SHOTS:6:
+FIRING_MODE:S:
+RELOAD:3:
+ATTRIBUTE:Partial reload:
+ATTRIBUTE:Projectile:
+DESCRIPTION:A revolver.:
+
+NAME:Automatic pistol:
+TYPE:Ranged combat weapon:
+SUBTYPE:Pistol:
+COLOUR:Silver:
+SYMBOL:/:
+CONDITION:20:
+VALUE:150:
+WEIGHT:20:
+DAMAGE:2:5:
+SHOTS:20:
+FIRING_MODE:S:
+FIRING_MODE:SA:2:2:
+RELOAD:2:
+ATTRIBUTE:Projectile:
+DESCRIPTION:An automatic pistol.:
+
+NAME:Automatic rifle:
+TYPE:Ranged combat weapon:
+SUBTYPE:Basic:
+COLOUR:Silver:
+SYMBOL:/:
+CONDITION:20:
+VALUE:300:
+WEIGHT:30:
+DAMAGE:2:6:
+SHOTS:20:
+FIRING_MODE:S:
+FIRING_MODE:SA:2:4:
+RELOAD:2:
+ATTRIBUTE:Projectile:
+DESCRIPTION:An automatic rifle.:
+
+NAME:Shotgun:
+TYPE:Ranged combat weapon:
+SUBTYPE:Basic:
+COLOUR:Silver:
+SYMBOL:/:
+CONDITION:20:
+VALUE:180:
+WEIGHT:30:
+DAMAGE:2:6:4:
+SHOTS:2:
+FIRING_MODE:S:
+RELOAD:2:
+ATTRIBUTE:Partial reload:
+ATTRIBUTE:Projectile:
+DESCRIPTION:A shotgun.:
+
+NAME:Sawn-off shotgun:
+TYPE:Ranged combat weapon:
+SUBTYPE:Pistol:
+COLOUR:Silver:
+SYMBOL:/:
+CONDITION:20:
+VALUE:180:
+WEIGHT:25:
+ACCURACY:-10:
+DAMAGE:2:6:4:
+SHOTS:2:
+FIRING_MODE:S:
+RELOAD:2:
+ATTRIBUTE:Partial reload:
+ATTRIBUTE:Projectile:
+DESCRIPTION:A sawn-off shotgun.:
+
+NAME:Combat shotgun:
+TYPE:Ranged combat weapon:
+SUBTYPE:Basic:
+COLOUR:Silver:
+SYMBOL:/:
+CONDITION:20:
+VALUE:500:
+WEIGHT:35:
+DAMAGE:2:6:4:
+SHOTS:8:
+FIRING_MODE:S:
+FIRING_MODE:SA:2:3:
+RELOAD:2:
+ATTRIBUTE:Partial reload:
+ATTRIBUTE:Projectile:
+DESCRIPTION:An automatic combat shotgun.:
+
+NAME:Sniper rifle:
+TYPE:Ranged combat weapon:
+SUBTYPE:Basic:
+COLOUR:Silver:
+SYMBOL:/:
+CONDITION:20:
+VALUE:400:
+WEIGHT:30:
+ACCURACY:+10:
+DAMAGE:2:8:
+SHOTS:1:
+FIRING_MODE:S:
+RELOAD:1:
+ATTRIBUTE:Projectile:
+DESCRIPTION:A very accurate rifle designed for snipers.:
+
+NAME:Automatic cannon:
+TYPE:Ranged combat weapon:
+SUBTYPE:Heavy:
+COLOUR:Silver:
+SYMBOL:/:
+CONDITION:20:
+VALUE:1000:
+WEIGHT:50:
+DAMAGE:2:5:
+SHOTS:40:
+FIRING_MODE:S:
+FIRING_MODE:A:10:
+RELOAD:4:
+ATTRIBUTE:Projectile:
+DESCRIPTION:A heavy weapon with an incredibly high rate of fire.:
+
+NAME:Assault cannon:
+TYPE:Ranged combat weapon:
+SUBTYPE:Heavy:
+COLOUR:Silver:
+SYMBOL:/:
+CONDITION:20:
+VALUE:3000:
+WEIGHT:75:
+DAMAGE:2:8:
+SHOTS:40:
+FIRING_MODE:S:
+FIRING_MODE:A:10:
+RELOAD:6:
+ATTRIBUTE:Projectile:
+DESCRIPTION:A heavy weapon with an incredibly high rate of fire.:
+
+
+
+#
+# Needle weapons
+#
+
+NAME:Needle pistol:
+TYPE:Ranged combat weapon:
+SUBTYPE:Pistol:
+COLOUR:Poison green:
+SYMBOL:/:
+CONDITION:20:
+VALUE:300:
+WEIGHT:15:
+DAMAGE:2:5:
+SHOTS:6:
+FIRING_MODE:S:
+RELOAD:4:
+ATTRIBUTE:Poison:
+ATTRIBUTE:Silent:
+ATTRIBUTE:Projectile:
+DESCRIPTION:A pistol which fires small needles filled with lethal toxins. :
+DESCRIPTION:Needle weapons are silent and produce no muzzle flash when fired, :
+DESCRIPTION:so they are often used by assassins.:
+
+NAME:Needle rifle:
+TYPE:Ranged combat weapon:
+SUBTYPE:Basic:
+COLOUR:Poison green:
+SYMBOL:/:
+CONDITION:20:
+VALUE:400:
+WEIGHT:30:
+ACCURACY:+10:
+DAMAGE:2:5:
+SHOTS:6:
+FIRING_MODE:S:
+RELOAD:4:
+ATTRIBUTE:Poison:
+ATTRIBUTE:Silent:
+ATTRIBUTE:Projectile:
+DESCRIPTION:A rifle which fires small needles filled with lethal toxins. :
+DESCRIPTION:Needle weapons are silent and produce no muzzle flash when fired, :
+DESCRIPTION:so they are often used by assassins.:
+
+
+
+#
+# Laser weapons
+#
+
+NAME:Laser pistol:
+TYPE:Ranged combat weapon:
+SUBTYPE:Pistol:
+COLOUR:Army:
+SYMBOL:/:
+CONDITION:20:
+VALUE:100:
+WEIGHT:15:
+DAMAGE:2:6:
+SHOTS:30:
+FIRING_MODE:S:
+RELOAD:2:
+ATTRIBUTE:Laser:
+DESCRIPTION:A pistol that fires a concentrated beam of light.:
+
+NAME:Laser rifle:
+TYPE:Ranged combat weapon:
+SUBTYPE:Basic:
+COLOUR:Army:
+SYMBOL:/:
+CONDITION:20:
+VALUE:150:
+WEIGHT:25:
+DAMAGE:2:6:2:
+SHOTS:60:
+FIRING_MODE:S:
+RELOAD:2:
+ATTRIBUTE:Laser:
+DESCRIPTION:A rifle that fires a concentrated beam of light.:
+
+NAME:Assault laser:
+TYPE:Ranged combat weapon:
+SUBTYPE:Basic:
+COLOUR:Army:
+SYMBOL:/:
+CONDITION:20:
+VALUE:400:
+WEIGHT:30:
+DAMAGE:2:6:2:
+SHOTS:60:
+FIRING_MODE:S:
+FIRING_MODE:SA:2:3:
+RELOAD:2:
+ATTRIBUTE:Laser:
+DESCRIPTION:An automatic laser rifle.:
+
+NAME:Scorcher pistol:
+TYPE:Ranged combat weapon:
+SUBTYPE:Pistol:
+COLOUR:Fiery orange:
+SYMBOL:/:
+CONDITION:20:
+VALUE:300:
+WEIGHT:15:
+DAMAGE:2:8:
+SHOTS:30:
+FIRING_MODE:S:
+RELOAD:2:
+ATTRIBUTE:Laser:
+DESCRIPTION:A pistol that fires a concentrated beam of light. A more :
+DESCRIPTION:powerful variant of the laser pistol.:
+
+NAME:Scorcher rifle:
+TYPE:Ranged combat weapon:
+SUBTYPE:Basic:
+COLOUR:Fiery orange:
+SYMBOL:/:
+CONDITION:20:
+VALUE:500:
+WEIGHT:30:
+DAMAGE:2:8:4:
+SHOTS:50:
+FIRING_MODE:S:
+RELOAD:2:
+ATTRIBUTE:Laser:
+DESCRIPTION:A gun that fires a concentrated beam of light. A more powerful :
+DESCRIPTION:variant of the laser rifle.:
+
+NAME:Laser cannon:
+TYPE:Ranged combat weapon:
+SUBTYPE:Heavy:
+COLOUR:Army:
+SYMBOL:/:
+CONDITION:20:
+VALUE:2000:
+WEIGHT:75:
+ACCURACY:-10:
+DAMAGE:4:10:
+SHOTS:20:
+FIRING_MODE:S:
+RELOAD:6:
+ATTRIBUTE:Laser:
+DESCRIPTION:The laser cannon is a heavy weapon that fires a very powerful, :
+DESCRIPTION:concentrated beam of light.:
+
+
+
+#
+# Bolt weapons
+#
+
+NAME:Bolt carbine:
+TYPE:Ranged combat weapon:
+SUBTYPE:Basic:
+COLOUR:Red:
+SYMBOL:/:
+CONDITION:20:
+VALUE:600:
+WEIGHT:35:
+DAMAGE:2:10:4:
+SHOTS:20:
+FIRING_MODE:S:
+RELOAD:2:
+ATTRIBUTE:Projectile:
+DESCRIPTION:A gun that fires rocket-propelled projectiles with mass-reactive :
+DESCRIPTION:warheads.:
+
+NAME:Bolt pistol:
+TYPE:Ranged combat weapon:
+SUBTYPE:Pistol:
+COLOUR:Red:
+SYMBOL:/:
+CONDITION:20:
+VALUE:600:
+WEIGHT:25:
+DAMAGE:2:10:
+SHOTS:12:
+FIRING_MODE:S:
+FIRING_MODE:SA:2:2:
+RELOAD:2:
+ATTRIBUTE:Projectile:
+DESCRIPTION:A pistol that fires rocket-propelled projectiles with :
+DESCRIPTION:mass-reactive warheads.:
+
+NAME:Bolter:
+TYPE:Ranged combat weapon:
+SUBTYPE:Basic:
+COLOUR:Red:
+SYMBOL:/:
+CONDITION:20:
+VALUE:1000:
+WEIGHT:40:
+DAMAGE:2:10:4:
+SHOTS:20:
+FIRING_MODE:S:
+FIRING_MODE:SA:2:2:
+RELOAD:2:
+ATTRIBUTE:Projectile:
+DESCRIPTION:A gun that fires rocket-propelled projectiles with :
+DESCRIPTION:mass-reactive warheads.:
+
+NAME:Assault bolter:
+TYPE:Ranged combat weapon:
+SUBTYPE:Basic:
+COLOUR:Red:
+SYMBOL:/:
+CONDITION:20:
+VALUE:1400:
+WEIGHT:55:
+DAMAGE:2:10:4:
+SHOTS:30:
+FIRING_MODE:SA:2:4:
+RELOAD:3:
+ATTRIBUTE:Projectile:
+DESCRIPTION:A gun that fires rocket-propelled projectiles with mass-reactive :
+DESCRIPTION:warheads. Compared to the standard bolter it has a higher rate :
+DESCRIPTION:of fire.:
+
+
+
+#
+# Plasma weapons
+#
+
+NAME:Plasma pistol:
+TYPE:Ranged combat weapon:
+SUBTYPE:Pistol:
+COLOUR:Radioactive:
+SYMBOL:/:
+CONDITION:20:
+VALUE:1000:
+WEIGHT:25:
+ACCURACY:-15:
+DAMAGE:3:10:
+SHOTS:1:
+FIRING_MODE:S:
+RELOAD:4:
+ATTRIBUTE:Plasma:
+ATTRIBUTE:Automatic recharge:
+DESCRIPTION:A pistol that fires superheated plasma.:
+
+NAME:Plasma rifle:
+TYPE:Ranged combat weapon:
+SUBTYPE:Basic:
+COLOUR:Radioactive:
+SYMBOL:/:
+CONDITION:20:
+VALUE:1800:
+WEIGHT:55:
+ACCURACY:-10:
+DAMAGE:3:10:5:
+SHOTS:1:
+FIRING_MODE:S:
+RELOAD:3:
+ATTRIBUTE:Plasma:
+ATTRIBUTE:Automatic recharge:
+DESCRIPTION:A rifle that fires superheated plasma.:
+
+
+
+
+
+########################### Close combat weapons ###########################
+
+#
+# Ordinary weapons
+#
+
+NAME:Knife:
+TYPE:Close combat weapon:
+SUBTYPE:Knife:
+COLOUR:Silver:
+SYMBOL:!:
+CONDITION:20:
+VALUE:30:
+WEIGHT:5:
+DAMAGE:1:7:
+REACH:1:
+PARRY_PENALTY:-25:
+DESCRIPTION:A combat knife.:
+
+NAME:Sword:
+TYPE:Close combat weapon:
+COLOUR:Silver:
+SYMBOL:!:
+CONDITION:20:
+VALUE:100:
+WEIGHT:20:
+DAMAGE:2:6:
+REACH:3:
+PARRY_PENALTY:-10:
+DESCRIPTION:A sword.:
+
+NAME:Imperial sword:
+TYPE:Close combat weapon:
+COLOUR:Gold:
+SYMBOL:!:
+CONDITION:20:
+VALUE:300:
+WEIGHT:15:
+DAMAGE:2:6:
+REACH:3:
+DESCRIPTION:Imperial swords are carried by nobles as a status symbol. :
+DESCRIPTION:All Imperial swords are forged on Terra according to the :
+DESCRIPTION:highest quality standards.:
+
+NAME:Axe:
+TYPE:Close combat weapon:
+COLOUR:Silver:
+SYMBOL:!:
+CONDITION:20:
+VALUE:100:
+WEIGHT:30:
+DAMAGE:2:8:
+REACH:2:
+PARRY_PENALTY:-20:
+DESCRIPTION:An axe.:
+
+NAME:Pick axe:
+TYPE:Close combat weapon:
+COLOUR:Silver:
+SYMBOL:!:
+CONDITION:20:
+VALUE:20:
+WEIGHT:40:
+DAMAGE:1:7:
+REACH:2:
+PARRY_PENALTY:-30:
+DESCRIPTION:A pick axe.:
+
+NAME:Cleaver:
+TYPE:Close combat weapon:
+COLOUR:Silver:
+SYMBOL:!:
+CONDITION:20:
+VALUE:40:
+WEIGHT:30:
+DAMAGE:2:4:
+REACH:2:
+PARRY_PENALTY:-30:
+DESCRIPTION:A cleaver.:
+
+NAME:Pick:
+TYPE:Close combat weapon:
+COLOUR:Silver:
+SYMBOL:!:
+CONDITION:20:
+VALUE:10:
+WEIGHT:30:
+DAMAGE:2:4:
+REACH:2:
+PARRY_PENALTY:-30:
+DESCRIPTION:A pick.:
+
+NAME:Halberd:
+TYPE:Close combat weapon:
+COLOUR:Silver:
+SYMBOL:!:
+CONDITION:20:
+VALUE:100:
+WEIGHT:40:
+DAMAGE:1:10:
+REACH:4:
+PARRY_PENALTY:-15:
+DESCRIPTION:A halberd.:
+
+
+
+#
+# Poison weapons
+#
+
+NAME:Venom blade:
+TYPE:Close combat weapon:
+SUBTYPE:Knife:
+COLOUR:Silver:
+SYMBOL:!:
+CONDITION:20:
+VALUE:100:
+WEIGHT:5:
+DAMAGE:1:6:
+REACH:1:
+PARRY_PENALTY:-25:
+ATTRIBUTE:Poison:
+DESCRIPTION:A short blade which releases lethal toxins once it has :
+DESCRIPTION:penetrated its target.:
+
+
+
+#
+# Chain weapons
+#
+
+NAME:Chainsword:
+TYPE:Close combat weapon:
+COLOUR:Red:
+SYMBOL:!:
+CONDITION:20:
+VALUE:200:
+WEIGHT:30:
+DAMAGE:2:10:
+REACH:3:
+PARRY_PENALTY:-15:
+ATTRIBUTE:Noisy:
+DESCRIPTION:A sword with motorised teeth.:
+
+NAME:Chainaxe:
+TYPE:Close combat weapon:
+COLOUR:Red:
+SYMBOL:!:
+CONDITION:20:
+VALUE:200:
+WEIGHT:40:
+DAMAGE:2:12:
+REACH:2:
+PARRY_PENALTY:-20:
+ATTRIBUTE:Noisy:
+DESCRIPTION:An axe with motorised teeth.:
+
+NAME:Eviscerator:
+TYPE:Close combat weapon:
+COLOUR:Red:
+SYMBOL:!:
+CONDITION:20:
+VALUE:300:
+WEIGHT:60:
+DAMAGE:2:12:
+REACH:3:
+PARRY_PENALTY:-30:
+ATTRIBUTE:Noisy:
+DESCRIPTION:A massive chainsword.:
+
+
+
+#
+# Power weapons
+#
+
+NAME:Power knife:
+TYPE:Close combat weapon:
+SUBTYPE:Knife:
+COLOUR:Burgundy:
+SYMBOL:!:
+CONDITION:20:
+VALUE:400:
+WEIGHT:10:
+DAMAGE:1:10:
+REACH:1:
+PARRY_PENALTY:-30:
+ATTRIBUTE:Power:
+DESCRIPTION:A kife sheathed in a disruptive energy field that can tear :
+DESCRIPTION:through armour easily.:
+
+NAME:Power sword:
+TYPE:Close combat weapon:
+COLOUR:Burgundy:
+SYMBOL:!:
+CONDITION:20:
+VALUE:800:
+WEIGHT:30:
+DAMAGE:3:10:
+REACH:3:
+PARRY_PENALTY:-15:
+ATTRIBUTE:Power:
+DESCRIPTION:A sword sheathed in a disruptive energy field that can tear :
+DESCRIPTION:through armour easily.:
+
+NAME:Power axe:
+TYPE:Close combat weapon:
+COLOUR:Burgundy:
+SYMBOL:!:
+CONDITION:20:
+VALUE:800:
+WEIGHT:40:
+DAMAGE:3:12:
+REACH:2:
+PARRY_PENALTY:-20:
+ATTRIBUTE:Power:
+DESCRIPTION:An axe sheathed in a disruptive energy field that can tear :
+DESCRIPTION:through armour easily.:
+
+
+
+#
+# Shock weapons
+#
+
+NAME:Neural whip:
+TYPE:Close combat weapon:
+COLOUR:Teal:
+SYMBOL:!:
+CONDITION:20:
+VALUE:200:
+WEIGHT:20:
+DAMAGE:1:6:
+REACH:4:
+PARRY_PENALTY:-50:
+ATTRIBUTE:Shock:
+DESCRIPTION:A whip charged with electical energy. Can stun the enemy.:
+
+NAME:Shock maul:
+TYPE:Close combat weapon:
+COLOUR:Teal:
+SYMBOL:!:
+CONDITION:20:
+VALUE:130:
+WEIGHT:30:
+DAMAGE:2:4:
+REACH:2:
+PARRY_PENALTY:-20:
+ATTRIBUTE:Shock:
+DESCRIPTION:A maul charged with electical energy. Can stun the enemy.:
+
+
+
+#
+# Force weapons
+#
+
+NAME:Force sword:
+TYPE:Close combat weapon:
+COLOUR:Gold:
+SYMBOL:!:
+CONDITION:20:
+VALUE:300:
+WEIGHT:20:
+DAMAGE:2:6:
+REACH:3:
+PARRY_PENALTY:-10:
+ATTRIBUTE:Force:
+DESCRIPTION:A sword that channels mental energy.:
+
+NAME:Force rod:
+TYPE:Close combat weapon:
+COLOUR:Gold:
+SYMBOL:!:
+CONDITION:20:
+VALUE:400:
+WEIGHT:10:
+DAMAGE:1:3:
+REACH:2:
+PARRY_PENALTY:-30:
+ATTRIBUTE:Force:
+ATTRIBUTE:Force channel:
+DESCRIPTION:A rod that channels mental energy.:
+
+NAME:Force halberd:
+TYPE:Close combat weapon:
+COLOUR:Gold:
+SYMBOL:!:
+CONDITION:20:
+VALUE:300:
+WEIGHT:40:
+DAMAGE:1:10:
+REACH:4:
+PARRY_PENALTY:-15:
+ATTRIBUTE:Force:
+DESCRIPTION:A halberd that channels mental energy.:
+
+NAME:Rune staff:
+TYPE:Close combat weapon:
+COLOUR:Gold:
+SYMBOL:!:
+CONDITION:20:
+VALUE:1000:
+WEIGHT:40:
+DAMAGE:1:6:
+REACH:4:
+PARRY_PENALTY:-10:
+ATTRIBUTE:Force:
+ATTRIBUTE:Force rune:
+ATTRIBUTE:Force channel:
+DESCRIPTION:A staff that channels mental energy.:
+
+NAME:Rune sword:
+TYPE:Close combat weapon:
+COLOUR:Gold:
+SYMBOL:!:
+CONDITION:20:
+VALUE:800:
+WEIGHT:20:
+DAMAGE:2:6:
+REACH:3:
+PARRY_PENALTY:-10:
+ATTRIBUTE:Force:
+ATTRIBUTE:Force rune:
+DESCRIPTION:An sword that channels mental energy.:
+
+NAME:Rune axe:
+TYPE:Close combat weapon:
+COLOUR:Gold:
+SYMBOL:!:
+CONDITION:20:
+VALUE:800:
+WEIGHT:30:
+DAMAGE:2:8:
+REACH:2:
+PARRY_PENALTY:-20:
+ATTRIBUTE:Force:
+ATTRIBUTE:Force rune:
+DESCRIPTION:An axe that channels mental energy.:
+
+NAME:Hammer of Fate:
+TYPE:Close combat weapon:
+COLOUR:Gold:
+SYMBOL:!:
+CONDITION:20:
+VALUE:1200:
+WEIGHT:35:
+DAMAGE:4:4:
+REACH:2:
+PARRY_PENALTY:-30:
+ATTRIBUTE:Force:
+ATTRIBUTE:Force rune:
+ATTRIBUTE:Unique:
+DESCRIPTION:The Hammer of Fate.:
+
+
+
+########################### Armours ###########################
+
+NAME:Leather armour:
+TYPE:Armour:
+SUBTYPE:Light:
+COLOUR:Sienna:
+SYMBOL:[:
+CONDITION:100:
+VALUE:100:
+WEIGHT:50:
+ARMOUR_VALUE:1:
+DESCRIPTION:Leather armour.:
+
+NAME:Flak armour:
+TYPE:Armour:
+SUBTYPE:Medium:
+COLOUR:Army:
+SYMBOL:[:
+CONDITION:100:
+VALUE:300:
+WEIGHT:100:
+ARMOUR_VALUE:3:
+DESCRIPTION:Flak armour.:
+
+NAME:Light combat armour:
+TYPE:Armour:
+SUBTYPE:Light:
+COLOUR:Fiery orange:
+SYMBOL:[:
+CONDITION:80:
+VALUE:600:
+WEIGHT:70:
+ARMOUR_VALUE:4:
+DESCRIPTION:Light combat armour.:
+
+NAME:Combat armour:
+TYPE:Armour:
+SUBTYPE:Medium:
+COLOUR:Silver:
+SYMBOL:[:
+CONDITION:150:
+VALUE:500:
+WEIGHT:150:
+ARMOUR_VALUE:5:
+DESCRIPTION:Combat armour.:
+
+NAME:Assault armour:
+TYPE:Armour:
+SUBTYPE:Medium:
+COLOUR:Jade:
+SYMBOL:[:
+CONDITION:200:
+VALUE:800:
+WEIGHT:200:
+ARMOUR_VALUE:7:
+DESCRIPTION:Assault armour.:
+
+NAME:Power armour:
+TYPE:Armour:
+SUBTYPE:Heavy:
+COLOUR:Burgundy:
+SYMBOL:[:
+CONDITION:300:
+VALUE:5000:
+WEIGHT:380:
+ARMOUR_VALUE:10:
+ATTRIBUTE:Strength boost:
+ATTRIBUTE:Environmental:
+DESCRIPTION:A powered full-body suit.:
+
+
+
+########################### Drugs ###########################
+
+NAME:Antidote:
+TYPE:Drug:
+COLOUR:Jade:
+SYMBOL:,:
+CONDITION:1:
+VALUE:10:
+WEIGHT:1:
+DESCRIPTION:Cures poisoning.:
+
+NAME:Flash:
+TYPE:Drug:
+COLOUR:Jade:
+SYMBOL:,:
+CONDITION:1:
+VALUE:10:
+WEIGHT:1:
+DESCRIPTION:Flash improves reaction time and heightens awareness. :
+DESCRIPTION:Effect\: +4D10 Agility, -2D10 Will Power:
+
+NAME:Stoic:
+TYPE:Drug:
+COLOUR:Jade:
+SYMBOL:,:
+CONDITION:1:
+VALUE:10:
+WEIGHT:1:
+DESCRIPTION:Stoic renders the user incapable of feeling fear or pain. :
+DESCRIPTION:Effect\: -2D10 Agility, Immunity to fear and pain:
+
+NAME:Nomat:
+TYPE:Drug:
+COLOUR:Jade:
+SYMBOL:,:
+CONDITION:1:
+VALUE:40:
+WEIGHT:1:
+DESCRIPTION:Nomat is short for no matter. This simm provides a short-term :
+DESCRIPTION:boost to an individual's psychic potential while limiting his :
+DESCRIPTION:ability to perceive the material world. :
+DESCRIPTION:Effect\: One extra D10 during evocation rolls, -4D10 Close Combat, -4D10 Ranged Combat.:
+
+NAME:Focus:
+TYPE:Drug:
+COLOUR:Jade:
+SYMBOL:,:
+CONDITION:1:
+VALUE:10:
+WEIGHT:1:
+DESCRIPTION:Focus gives the user an uncanny ability to focus, and sharpens his :
+DESCRIPTION:senses while slowing his reaction time. :
+DESCRIPTION:Effect\: +4D10 Ranged Combat, -2D10 Agility:
+
+NAME:Bull:
+TYPE:Drug:
+COLOUR:Jade:
+SYMBOL:,:
+CONDITION:1:
+VALUE:20:
+WEIGHT:1:
+DESCRIPTION:Effect\: +4D10 Strength, -4D10 Ranged Combat, -4D10 Fellowship, :
+DESCRIPTION:-4D10 Intelligence:
+
+
+
+
+
+########################### Miscellaneous objects ###########################
+
+NAME:Credits:
+NUMERUS:Plural:
+TYPE:Money:
+COLOUR:Gold:
+SYMBOL:$:
+CONDITION:1:
+WEIGHT:1:
+DESCRIPTION:The Imperial currency.:
+
+NAME:Jump pack:
+TYPE:Jump pack:
+COLOUR:Red:
+SYMBOL:]:
+CONDITION:100:
+VALUE:500:
+WEIGHT:40:
+DESCRIPTION:A jump pack.:
+

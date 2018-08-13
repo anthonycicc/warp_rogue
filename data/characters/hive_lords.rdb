@@ -1,0 +1,59 @@
+#
+# Hive Lords Characters
+#
+
+NAME:Hive lord:
+FACTION:Hive lords:
+GENDER:M:
+SYMBOL:H:
+POWER_LEVEL:2:
+CAREER:Scarred ganger:
+CC:51:
+RC:52:
+ST:48:
+TN:52:
+AG:48:
+IN:31:
+WP:50:
+FL:35:
+PERK:Fast draw:
+PERK:Drug resistant:
+PERK:Unarmed combat:
+OBJECT:Automatic pistol:
+OBJECT:Knife:
+OBJECT:Stoic:
+OBJECT:Credits:50:
+SCRIPT:hive_lord.wca:
+DESCRIPTION:The Hive Lords are one of the most powerful gangs of Hive Cruor. :
+
+NAME:Fat Vince:
+FACTION:Hive lords:
+GENDER:M:
+SYMBOL:H:
+POWER_LEVEL:3:
+CAREER:Gang leader:
+COLOUR:Gray:
+CC:61:
+RC:62:
+ST:68:
+TN:74:
+AG:58:
+IN:41:
+WP:70:
+FL:55:
+ATTRIBUTE:Unique:
+PERK:Fast draw:
+PERK:Drug resistant:
+PERK:Rapid shot:
+PERK:Crushing strike:
+PERK:Leader:
+OBJECT:Automatic rifle:
+OBJECT:Chainsword:
+OBJECT:Flak armour:
+OBJECT:Stoic:
+OBJECT:Credits:200:
+SCRIPT:fat_vince.wca:
+DESCRIPTION:Fat Vince is the leader of the Hive Lords, one of the most :
+DESCRIPTION:powerful gangs of Hive Cruor. While Fat Vince is fat, he is :
+DESCRIPTION:also tough as hell.:
+

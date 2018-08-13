@@ -1,0 +1,158 @@
+#
+# Perks
+#
+
+NAME:Alertness:
+DESCRIPTION:Characters with this perk can spot unnoticed enemies if they pass a :
+DESCRIPTION:50% test. They are also able to spot snipers who use silent guns.:
+
+NAME:Alien technology:
+DESCRIPTION:The character can use alien technology.:
+
+NAME:Battle tactics:
+DESCRIPTION:All members of the character's party receive a +20 Initiative bonus.:
+
+NAME:Blademaster:
+DESCRIPTION:If a character with this perk is attacking or parrying with knives he :
+DESCRIPTION:counts as having a Reach 4 weapon and all hits count as critical hits.:
+
+NAME:Combat evocation:
+DESCRIPTION:The character can evoke psychic powers while being involved in close combat :
+DESCRIPTION:without penalty.:
+
+NAME:Critical shot:
+DESCRIPTION:The chance to score a critical hit is doubled when shooting. :
+DESCRIPTION:The perk has no effect when the character uses rapid fire (SA, A).:
+
+NAME:Critical strike:
+DESCRIPTION:The chance to score a critical hit is doubled when striking.:
+
+NAME:Crushing strike:
+DESCRIPTION:Doubles a character's strength bonus when he strikes i.e. :
+DESCRIPTION:a character with Strength 70 would receive a +4 damage :
+DESCRIPTION:bonus instead of +2.:
+
+NAME:Daemon lore:
+DESCRIPTION:The character can use daemonic equipment.:
+
+NAME:Disarm:
+DESCRIPTION:The character can disarm another character. Success depends on :
+DESCRIPTION:the close combat stats of the character and the target. Both take a :
+DESCRIPTION:close combat stat test; if the character succeeds and his target fails :
+DESCRIPTION:the target gets disarmed.:
+
+NAME:Disease attack:
+DESCRIPTION:If a character with this perk hits a target with an unarmed attack :
+DESCRIPTION:and causes damage, the target will become diseased, unless it passes :
+DESCRIPTION:a toughness test or is immune to disease.:
+
+NAME:Drug resistant:
+DESCRIPTION:Characters who are drug resistant are immune to the negative effects of :
+DESCRIPTION:drugs.:
+
+NAME:Enhanced parry:
+DESCRIPTION:Parry penalties are reduced by 10.:
+
+NAME:Fast draw:
+DESCRIPTION:A character with Fast draw can switch between his primary and his :
+DESCRIPTION:secondary weapon without spending an action to do so.:
+
+NAME:First aid:
+DESCRIPTION:The character receives a +50 bonus to all recovery tests i.e. he heals :
+DESCRIPTION:faster, diseases go away more quickly, etc.:
+
+NAME:Grenadier:
+DESCRIPTION:Not implemented yet.:
+
+NAME:Immunity to disease:
+DESCRIPTION:This perk makes a character immune to disease.:
+
+NAME:Immunity to fear:
+DESCRIPTION:This perk makes a character immune to fear.:
+
+NAME:Immunity to pain:
+DESCRIPTION:This perk makes a character immune to pain.:
+
+NAME:Immunity to poison:
+DESCRIPTION:This perk makes a character immune to poison.:
+
+NAME:Jump pack:
+DESCRIPTION:Characters who have this perk can use jump packs.:
+
+NAME:Leader:
+DESCRIPTION:All members of the character's party re-roll failed Will Power tests :
+DESCRIPTION:if the reason for the tests was either pain or fear. :
+
+NAME:Marksman:
+DESCRIPTION:Range based to hit penalties are reduced (they are divided by 5).:
+
+NAME:Psychic I:
+DESCRIPTION:The character is a psyker with basic skills.:
+
+NAME:Psychic II:
+DESCRIPTION:The character is a psyker with advanced skills.:
+
+NAME:Psychic III:
+DESCRIPTION:The character is a master psyker.:
+
+NAME:Psychic resistance:
+DESCRIPTION:Every attempt to use hostile psychic powers against the character :
+DESCRIPTION:suffers a -20 difficulty penalty. Only psychic bolts are not affected :
+DESCRIPTION:by this.:
+
+NAME:Psychic weapons:
+DESCRIPTION:A character with this perk can use psychic weapons.:
+
+NAME:Quickload:
+DESCRIPTION:A character with quickload takes half as many actions as normal to :
+DESCRIPTION:reload a weapon (rounding down) / can reload twice as many rounds :
+DESCRIPTION:per action. Obviously, this skill has no effect on weapons which :
+DESCRIPTION:need to recharge.:
+
+NAME:Rapid shot:
+DESCRIPTION:The SA firing mode to hit penalty is halved i.e. -5 instead of -10 :
+DESCRIPTION:per shot.:
+
+NAME:Rapid strike:
+DESCRIPTION:The character strikes twice instead of once in a single close combat :
+DESCRIPTION:action, however this only works if the weight of the used weapon is :
+DESCRIPTION:less than or equal to the character's strength divided by 2, or if :
+DESCRIPTION:he fights unarmed.:
+
+NAME:Silent evocation:
+DESCRIPTION:The character's evocations count as silent actions.:
+
+NAME:Sneak attack:
+DESCRIPTION:If the character has the Unnoticed status flag every attack will :
+DESCRIPTION:result in a critical hit except if the hit roll caused an automatic :
+DESCRIPTION:failure. The perk has no effect when the character uses rapid fire :
+DESCRIPTION:(SA, A) or rapid strike.:
+
+NAME:Spot trap:
+DESCRIPTION:The character can spot traps. Not implemented yet.:
+
+NAME:Spot weakness:
+DESCRIPTION:The armour value of the target is halved when calculating :
+DESCRIPTION:armour penetration / damage.:
+
+NAME:Stealth:
+DESCRIPTION:If the character uses the stealth perk his status changes to unnoticed. :
+DESCRIPTION:This perk cannot be used while enemies are watching the character, or :
+DESCRIPTION:while wearing medium or heavy armour. If a character is unnoticed, enemies :
+DESCRIPTION:will not be aware of his presence. However, enemies with the alertness perk :
+DESCRIPTION:can notice stealthy characters! The unnoticed status can also be lost by :
+DESCRIPTION:executing a non-silent action, or by a silent action if one of :
+DESCRIPTION:the observing enemies has the alertness perk, or passes a 50% test.:
+
+NAME:Unarmed combat:
+DESCRIPTION:The character's unarmed damage power is increased; he rolls two :
+DESCRIPTION:instead of one damage dice e.g. a character who would have an :
+DESCRIPTION:unarmed damage power of 1D4 without this perk, has a damage power :
+DESCRIPTION:of 2D4 with this perk.:
+
+NAME:Uncanny dodge:
+DESCRIPTION:Every attack against the character suffers a -20 to hit penalty.:
+
+NAME:Weapon maintenance:
+DESCRIPTION:The character's weapons malfunction less often.:
+

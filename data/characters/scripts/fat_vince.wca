@@ -1,0 +1,57 @@
+~
+
+  Character Script: Fat Vince
+
+~
+
+
+
+
+
+~
+
+  Death Script
+
+~
+if $KILLED = 'Yes'
+
+  quest_set_status 'Fat Vince Wanted' 'Completed, Not Rewarded'
+
+end_if
+
+~ Death Script End ~
+
+
+
+
+
+~
+
+  Dialogue Script
+
+~
+if $TRIGGERED = 'Yes'
+
+  dialogue_say 'Piss off!'
+
+  dialogue_add_option 'You talkin\' to me? You talkin\' to me?'
+  dialogue_add_option '...'
+
+  dialogue_choice $choice
+
+  if $choice = '...'
+    end
+  end_if
+
+  dialogue_say '...'
+
+  dialogue_add_option 'Well I\'m the only one here. Who the fuck do you think you\'re talking to?' 
+ 
+  dialogue_choice $choice
+
+  faction_set_relationship 'Player' 'Hive lords' 'Hostile'    
+
+end_if
+
+~ Dialogue Script End ~
+

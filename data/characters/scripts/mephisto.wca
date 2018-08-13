@@ -1,0 +1,42 @@
+~
+
+  Character Script: Mephisto
+
+~
+
+
+
+
+
+~
+
+  Death Script
+
+~
+if $KILLED = 'Yes'
+
+  quest_set_status 'Defeat Mephisto' 'Completed'
+
+  scenario_end 'Victory!'
+
+end_if
+
+~ Death Script End ~
+
+
+
+
+
+~
+
+  Dialogue Script
+
+~
+if $TRIGGERED = 'Yes'
+
+  ~ do nothing ~
+
+end_if
+
+~ Dialogue Script End ~
+

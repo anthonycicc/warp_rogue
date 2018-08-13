@@ -1,0 +1,74 @@
+#
+# Chaos objects
+#
+
+
+
+
+
+########################### Ranged combat weapons ###########################
+
+
+
+
+
+
+
+########################### Close combat weapons ###########################
+
+NAME:Pestling mouth:
+TYPE:Close combat weapon:
+DAMAGE:1:3:
+REACH:1:
+ATTRIBUTE:Inherent:
+ATTRIBUTE:Cannot parry:
+ATTRIBUTE:Disease:
+DESCRIPTION:Pestling mouth.:
+
+NAME:Plague knife:
+TYPE:Close combat weapon:
+SUBTYPE:Knife:
+COLOUR:Olive:
+SYMBOL:!:
+CONDITION:20:
+VALUE:100:
+WEIGHT:5:
+DAMAGE:1:7:
+REACH:1:
+PARRY_PENALTY:-25:
+ATTRIBUTE:Daemonic:
+ATTRIBUTE:Disease:
+DESCRIPTION:A knife whose blade spreads disease.:
+
+NAME:Prod of Education:
+TYPE:Close combat weapon:
+COLOUR:Red:
+SYMBOL:!:
+CONDITION:20:
+VALUE:200:
+WEIGHT:10:
+DAMAGE:1:8:
+REACH:2:
+PARRY_PENALTY:-30:
+ATTRIBUTE:Unique:
+ATTRIBUTE:Pain:
+ATTRIBUTE:Daemonic:
+DESCRIPTION:A nasty prod which causes unbearable pain.:
+
+NAME:Daemon talons:
+TYPE:Close combat weapon:
+COLOUR:Blood:
+SYMBOL:!:
+CONDITION:20:
+WEIGHT:5:
+DAMAGE:2:6:
+REACH:1:
+ATTRIBUTE:Inherent:
+ATTRIBUTE:Cannot parry:
+ATTRIBUTE:Daemonic:
+DESCRIPTION:Very nasty claws.:
+
+
+########################### Armours ###########################
+
+

@@ -1,0 +1,111 @@
+~
+
+  Character Script: Mammon
+
+~
+
+
+
+
+~
+
+  Death Script
+
+~
+if $KILLED = 'Yes'
+
+  ~ do nothing ~
+
+end_if
+
+~ Death Script End ~
+
+
+
+
+
+~
+
+  Dialogue Script
+
+~
+if $TRIGGERED = 'Yes'
+
+~
+  collecting dialogue determining data
+~
+
+
+~
+  the passive character greets
+~
+dialogue_say 'Hello.'
+
+
+
+~
+  dialogue loop
+~
+loop
+
+
+  if $choice = 'Bye.'
+    break
+  end_if
+
+
+  ~
+    the active character's dialogue options
+  ~
+  dialogue_add_option 'I want to buy something.'
+  dialogue_add_option 'I have something to sell.'
+  dialogue_add_option 'Bye.'
+
+
+  ~
+    dialogue choice
+  ~
+  dialogue_choice $choice
+
+
+  ~
+    the passive character replies
+  ~
+  if $choice = 'I want to buy something.'
+
+    shop_add 'Automatic cannon'
+    shop_add 'Assault cannon'
+    shop_add 'Assault laser'
+    shop_add 'Laser cannon'
+    shop_add 'Bolt carbine'
+    shop_add 'Bolt pistol'
+    shop_add 'Bolter'
+    shop_add 'Assault bolter'
+    shop_add 'Plasma pistol'
+    shop_add 'Plasma rifle'
+    shop_add 'Power knife'
+    shop_add 'Power sword'
+    shop_add 'Power axe'
+    shop_add 'Rune staff'
+    shop_add 'Rune sword'
+    shop_add 'Rune axe'
+    shop_add 'Light combat armour'
+    shop_add 'Assault armour'
+    shop_add 'Power armour'
+    shop_add 'Jump pack'
+    shop_set_price_level 150
+    shop_buy_mode $ACTIVE_CHARACTER
+
+  else_if $choice = 'I have something to sell.'
+
+    shop_sell_mode $ACTIVE_CHARACTER
+
+  end_if
+
+
+end_loop
+
+end_if
+
+~ Dialogue Script End ~
+

@@ -1,0 +1,84 @@
+~
+
+  Dungeon Script: Dread Mines
+
+~
+
+
+
+
+~
+
+  dungeon generation
+
+~
+if $GENERATION = 'Yes'
+
+
+  ~
+    level map generation
+  ~
+  cave_set_type 'Tunnels'
+  cave_set_wall 'Rock'
+  cave_set_floor 'Rock floor'
+  cave_set_connections 'Way down' 'Way up'
+  cave_set_environment 'Rock floor' 'Rock' 'Rock floor' 'Rock' 'Rock floor' 'Rock' 'Rock floor' 'Rock'
+
+  ~ ground level ~
+  if $LEVEL = 0
+    cave_set_environment 'Rock floor' 'Rock' 'Rock floor' 'Rock' 'Rock floor' 'Rock' 'Ash wastes' ''
+    cave_set_gate_level 0
+  end_if
+
+  cave_generate
+
+
+
+  ~
+    character spawning
+  ~
+  if $LEVEL = 3
+
+    spawn_character 'Gregor'
+    spawn_character 'Demagogue'
+
+    randomiser_add 'Infiltrator' 100
+    randomiser_add 'Armed mutant' 600
+    randomiser_add 'Mutant miner' 100
+    randomiser_add 'Ash mold' 100
+
+    randomiser_spawn_characters 8
+  
+  else_if $LEVEL = 2
+
+    spawn_character 'Bronstein'
+
+    randomiser_add 'Infiltrator' 20
+    randomiser_add 'Armed mutant' 100
+    randomiser_add 'Mutant miner' 100
+    randomiser_add 'Ash mold' 20
+
+    randomiser_spawn_characters 9
+
+  else_if $LEVEL = 1
+
+    spawn_character 'Demagogue'
+
+    randomiser_add 'Armed mutant' 100
+    randomiser_add 'Mutant miner' 100
+    randomiser_add 'Ash mold' 20
+
+    randomiser_spawn_characters 9
+
+  else_if $LEVEL = 0
+
+    randomiser_add 'Mutant miner' 300
+    randomiser_add 'Ash mold' 100
+
+    randomiser_spawn_characters 10
+
+  end_if
+
+
+end_if
+

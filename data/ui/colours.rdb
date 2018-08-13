@@ -1,0 +1,83 @@
+# 
+# colour definitions
+#
+
+COLOUR:Black:000000:
+COLOUR:Dark ash:242924:
+COLOUR:Ash:383C38:
+COLOUR:Dark metal:303133:
+COLOUR:Metal:515559:
+COLOUR:Gray:888888:
+COLOUR:Slate:2F5551:
+COLOUR:Silver:C5C5C5:
+COLOUR:Blood:9F0000:
+COLOUR:Burgundy:AE0027:
+COLOUR:Red:E30000:
+COLOUR:Purple:9F009F:
+COLOUR:Warlock purple:A70059:
+COLOUR:Army:618C59:
+COLOUR:Jade:00A781:
+COLOUR:Poison green:009F00:
+COLOUR:Lime:00E600:
+COLOUR:Olive:888800:
+COLOUR:Steel blue:40799F:
+COLOUR:Teal:009F9F:
+COLOUR:Dark radioactive:79A700:
+COLOUR:Radioactive:BEFC00:
+COLOUR:Dark gold:CCB200:
+COLOUR:Gold:F9D800:
+COLOUR:Yellow:E2E600:
+COLOUR:Dark rusty:473333:
+COLOUR:Rusty:695151:
+COLOUR:Vermin brown:90652F:
+COLOUR:Sienna:A7592F:
+COLOUR:Tan:CC9F69:
+COLOUR:Snakebite leather:A78C15:
+COLOUR:Fiery orange:EAA300:
+COLOUR:Khaki:C5B698:
+COLOUR:Asparagus:496149:
+
+
+# 
+# UI colours
+#
+UI:Text:Silver:
+UI:Highlight:Yellow:
+UI:Field value:Silver:
+UI:Field value increased:Lime:
+UI:Field value reduced:Red:
+UI:Field name:Gray:
+UI:Header:Gray:
+UI:Hot key:Silver:
+UI:Hot key bracket:Gray:
+UI:Secondary screen title:Gray:
+UI:Warning:Red:
+UI:Injured:Blood:
+UI:Cursor:Yellow:
+UI:Aggressive cursor:Red:
+UI:Psychic cursor:Warlock purple:
+UI:Metal:Metal:
+UI:Blood:Blood:
+
+
+# 
+# character flag colours
+#
+CHARACTER_ATTRIBUTE:Broken:Metal:
+CHARACTER_ATTRIBUTE:Bull:Jade:
+CHARACTER_ATTRIBUTE:Busy:Silver:
+CHARACTER_ATTRIBUTE:Cannot speak:Silver:
+CHARACTER_ATTRIBUTE:Daemonic:Red:
+CHARACTER_ATTRIBUTE:Diseased:Olive:
+CHARACTER_ATTRIBUTE:Flash:Jade:
+CHARACTER_ATTRIBUTE:Focus:Jade:
+CHARACTER_ATTRIBUTE:Machine:Metal:
+CHARACTER_ATTRIBUTE:No unarmed attack:Silver:
+CHARACTER_ATTRIBUTE:Nomat:Jade:
+CHARACTER_ATTRIBUTE:Poisoned:Poison green:
+CHARACTER_ATTRIBUTE:Psychic shield:Warlock purple:
+CHARACTER_ATTRIBUTE:Stoic:Jade:
+CHARACTER_ATTRIBUTE:Stunned:Teal:
+CHARACTER_ATTRIBUTE:Unique:Silver:
+CHARACTER_ATTRIBUTE:Unnoticed:Gray:
+CHARACTER_ATTRIBUTE:Warp strength:Warlock purple:

@@ -1,0 +1,20 @@
+Development: copx, warfarin
+
+Windows Port: copx
+
+OS X Port: Henrik Gustafsson, Sherm Pendley
+
+UNIX Port: Joni Yrjana, copx
+
+Various Contributions: Jeff Lait
+
+Random Number Generator: Takuji Nishimura, Makoto Matsumoto
+
+ASCII Art: Krogg
+
+Graphics: Kornel Kisielewicz
+
+Website: James Raspass
+
+Thanks To: 
+Everyone who supported the project by reporting bugs, giving feedback etc. 

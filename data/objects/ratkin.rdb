@@ -1,0 +1,133 @@
+#
+# Ratkin objects
+#
+
+
+
+
+
+########################### Ranged combat weapons ###########################
+
+NAME:Ratkin blowgun:
+TYPE:Ranged combat weapon:
+SUBTYPE:Basic:
+COLOUR:Poison green:
+SYMBOL:/:
+CONDITION:20:
+VALUE:60:
+WEIGHT:10:
+DAMAGE:1:6:
+SHOTS:1:
+FIRING_MODE:S:
+RELOAD:1:
+ATTRIBUTE:Alien:
+ATTRIBUTE:Poison:
+ATTRIBUTE:Silent:
+ATTRIBUTE:Reliable:
+ATTRIBUTE:Projectile:
+DESCRIPTION:A ratkin blowgun.:
+
+NAME:Pest Spitter:
+TYPE:Ranged combat weapon:
+SUBTYPE:Basic:
+COLOUR:Olive:
+SYMBOL:/:
+CONDITION:20:
+VALUE:400:
+WEIGHT:10:
+DAMAGE:1:8:
+SHOTS:1:
+FIRING_MODE:S:
+RELOAD:1:
+ATTRIBUTE:Unique:
+ATTRIBUTE:Alien:
+ATTRIBUTE:Disease:
+ATTRIBUTE:Silent:
+ATTRIBUTE:Reliable:
+ATTRIBUTE:Projectile:
+DESCRIPTION:A unique ratkin blowgun.:
+
+NAME:Warp blaster:
+TYPE:Ranged combat weapon:
+SUBTYPE:Basic:
+COLOUR:Radioactive:
+SYMBOL:/:
+CONDITION:20:
+VALUE:200:
+WEIGHT:70:
+ACCURACY:-20:
+DAMAGE:1:10:
+SHOTS:1:
+FIRING_MODE:S:
+RELOAD:2:
+ATTRIBUTE:Alien:
+ATTRIBUTE:Plasma:
+ATTRIBUTE:Automatic recharge:
+DESCRIPTION:A ratkin plasma blaster.:
+
+
+
+
+
+########################### Close combat weapons ###########################
+
+NAME:Ratkin claws:
+TYPE:Close combat weapon:
+DAMAGE:1:5:
+REACH:1:
+ATTRIBUTE:Inherent:
+ATTRIBUTE:Cannot parry:
+ATTRIBUTE:Disease:
+DESCRIPTION:Ratkin claws.:
+
+NAME:Ratkin dagger:
+TYPE:Close combat weapon:
+SUBTYPE:Knife:
+COLOUR:Blood:
+SYMBOL:!:
+CONDITION:20:
+VALUE:60:
+WEIGHT:5:
+DAMAGE:1:6:2:
+REACH:1:
+PARRY_PENALTY:-30:
+ATTRIBUTE:Alien:
+DESCRIPTION:A Ratkin dagger.:
+
+NAME:Warp Tooth:
+TYPE:Close combat weapon:
+SUBTYPE:Knife:
+COLOUR:Gray:
+SYMBOL:!:
+CONDITION:100:
+VALUE:2000:
+WEIGHT:5:
+DAMAGE:1:12:4:
+REACH:1:
+PARRY_PENALTY:-30:
+ATTRIBUTE:Unique:
+ATTRIBUTE:Alien:
+DESCRIPTION:A pitch black dagger covered with blood red runes. :
+
+
+
+
+########################### Armours ###########################
+
+NAME:Black Habit:
+TYPE:Armour:
+SUBTYPE:Light:
+COLOUR:Gray:
+SYMBOL:[:
+CONDITION:100:
+VALUE:3000:
+WEIGHT:30:
+ARMOUR_VALUE:5:
+ATTRIBUTE:Unique:
+ATTRIBUTE:Alien:
+DESCRIPTION:A black habit covered with runes. The runes are not visible :
+DESCRIPTION:unless their power is evoked. When active the runes become :
+DESCRIPTION:blood red, and seem to burn. The Ratkin believe, the eyes of :
+DESCRIPTION:their god shine through these runes.:
+
+

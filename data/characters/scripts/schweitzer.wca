@@ -1,0 +1,97 @@
+~
+
+  Character Script: Schweitzer
+
+~
+
+
+
+
+
+~
+
+  Death Script
+
+~
+if $KILLED = 'Yes'
+
+  ~ do nothing ~
+
+end_if
+
+~ Death Script End ~
+
+
+
+
+
+~
+
+  Dialogue Script
+
+~
+if $TRIGGERED = 'Yes'
+
+~
+  collecting dialogue determining data
+~
+
+
+~
+  the passive character greets
+~
+dialogue_say 'How may I help you my friend?'
+
+
+~
+  dialogue loop
+~
+loop
+
+
+  if $choice = 'Bye.'
+    break
+  end_if
+
+
+  ~
+    the active character's dialogue options
+  ~
+  dialogue_add_option 'I want to buy some drugs.'
+  dialogue_add_option 'I have something to sell.'
+  dialogue_add_option 'Bye.'
+
+
+  ~
+    dialogue choice
+  ~
+  dialogue_choice $choice
+
+
+  ~
+    the passive character replies
+  ~
+  if $choice = 'I want to buy some drugs.'
+
+    shop_add 'Antidote'
+    shop_add 'Flash'
+    shop_add 'Stoic'
+    shop_add 'Nomat'
+    shop_add 'Focus'
+    shop_add 'Bull'
+    shop_set_price_level 100
+    shop_buy_mode $ACTIVE_CHARACTER
+
+  else_if $choice = 'I have something to sell.'
+
+    shop_sell_mode $ACTIVE_CHARACTER
+
+  end_if
+
+
+end_loop
+
+end_if
+
+~ Dialogue Script End ~
+

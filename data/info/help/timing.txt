@@ -1,0 +1,7 @@
+Time is divided into rounds. 
+
+Each character gets one action per round. 
+
+The order in which the characters act depends on the Initiative values of the characters. The character with the highest Initiative acts first.
+
+A character's Initiative value is usually equal to his Agility stat. However, if the character's party has a member who has the Battle tactics perk, he gets a +20 Initiative bonus.

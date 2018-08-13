@@ -1,0 +1,18 @@
+Contents
+
+  Recruiting
+  Controlling Party Members
+  Dismissing Party Members
+
+
+= Recruiting =
+
+Recruiting is scenario dependent.
+
+= Controlling Party Members =
+
+You can take full control of any party member at any time, however you can never control more than one character at a time. To take control of a character press the hotkey shown next to his name. You can use tactical commands to exercise indirect control over AI controlled party members.
+
+= Dismissing Party Members =
+
+You can dismiss a member of your party if you want to. Just trigger the character you want to dismiss to start a dialogue; making the character leave the party will be one of the available dialogue options.

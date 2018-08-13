@@ -1,0 +1,46 @@
+Warp Rogue Compile Guide
+
+
+Dependencies
+
+SDL 1.2.9 or higher
+
+
+Make Files
+
+windows.mak - Windows / MinGW (pure MinGW i.e. no MSYS)
+unix.mak    - UNIX / GCC (only tested on Linux)
+mac.mak     - Mac OS X / GCC 
+
+
+Building
+
+All ports use make files and the process of building is similar on all platforms:
+
+- CD to the /src directory
+
+- execute: [make tool] -f[make file] release
+  example: mingw32-make -fwindows.mak release
+
+- an executable called "wrogue" should be generated in the main program directory
+  
+
+General Instructions for Unsupported Compilers
+ 
+- add the following directories to the include path of your compiler:
+  /src, /src/lib
+
+  Make sure that these directories are searched by your compiler
+  BEFORE all other directories! This is necessary because otherwise
+  your compiler might include wrong header files!
+
+- add all .c files in the /src directory and its subdirectories, except
+  the files in /src/platform to your project/make file
+
+- add the platform .c file for your target platform to your project/make file 
+  example: /src/platform/windows/platform_win.c  
+
+- add the SDL platform .c file (/src/platform/sdl/platform_sdl.c) to your 
+  project/make file 
+
+ 

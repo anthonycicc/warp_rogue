@@ -1,0 +1,77 @@
+#
+# Character attributes
+#
+
+NAME:Boss:
+DESCRIPTION:The character is a boss.:
+
+NAME:Broken:
+DESCRIPTION:The character's morale is broken.:
+
+NAME:Bull:
+DESCRIPTION:The character is under the influence of the drug 'Bull'.:
+
+NAME:Busy:
+DESCRIPTION:The character is busy doing something, reloading his weapon for :
+DESCRIPTION:example.:
+
+NAME:Cannot speak:
+DESCRIPTION:The character cannot speak.:
+
+NAME:Daemonic:
+DESCRIPTION:The character is a daemonic creature.:
+
+NAME:Diseased:
+DESCRIPTION:The character is diseased. His stats are reduced; to restore them :
+DESCRIPTION:he must recover, and pass a -90 toughness test.:
+
+NAME:Flash:
+DESCRIPTION:The character is under the influence of the drug 'Flash'.:
+
+NAME:Focus:
+DESCRIPTION:The character is under the influence of the drug 'Focus'.:
+
+NAME:Machine:
+DESCRIPTION:The character is a machine. Machines automatically pass all :
+DESCRIPTION:Will Power tests.:
+
+NAME:No unarmed attack:
+DESCRIPTION:The character has no unarmed attack.:
+
+NAME:Nomat:
+DESCRIPTION:The character is under the influence of the drug 'nomat'.:
+
+NAME:Plant:
+DESCRIPTION:The character is a plant. Plants are immune to fear and pain.:
+
+NAME:Poisoned:
+DESCRIPTION:The character is poisoned. Every phase he receives 1 injury point.:
+
+NAME:Psychic shield:
+DESCRIPTION:The character is under the influence of the psychic power :
+DESCRIPTION:'psychic shield'.:
+
+NAME:Stoic:
+DESCRIPTION:The character is under the influence of the drug 'Stoic'.:
+
+NAME:Stunned:
+DESCRIPTION:The character is stunned i.e. unable to act.:
+
+NAME:Unique:
+DESCRIPTION:The character is unique. Uniques do not respawn, and drop :
+DESCRIPTION:all their items when they die.:
+
+NAME:Unnoticed:
+DESCRIPTION:If a character is unnoticed, enemies will not be aware of his :
+DESCRIPTION:presence. However, enemies with the alertness perk can notice :
+DESCRIPTION:stealthy characters! The unnoticed status can also be lost by :
+DESCRIPTION:executing a non-silent action, or by a silent actions if one of :
+DESCRIPTION:the observing enemies has the alertness perk, or passes an :
+DESCRIPTION:intelligence test.:
+
+NAME:Warp strength:
+DESCRIPTION:The character is under the influence of the psychic power :
+DESCRIPTION:'warp strength'.:
+
+
+

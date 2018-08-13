@@ -1,0 +1,46 @@
+Contents
+
+  Stats
+  Stat Tests
+
+
+== Stats ==
+
+Close Combat
+
+The character's close combat skill. This stat covers melee weapons, unarmed fighting, and using pistols in close combat.
+
+Ranged Combat
+
+The character's ranged combat skill. This stat covers all ranged combat weapons.
+
+Strength
+
+The character's muscle and brawn. Strong characters can carry more, and cause more damage when fighting with melee weapons or unarmed.
+
+Toughness
+
+The character's ability to withstand physical damage. This includes the character's ability to resist diseases and poisons.
+
+Agility
+
+This stat covers reaction time, physical quickness and manual dexterity.
+
+Intelligence
+
+Represents the character's intelligence and education.
+
+Will Power
+
+The character's mental toughness and resolve.
+
+Fellowship
+
+Represents personal charisma and social skills.
+
+= Stat Tests =
+
+The outcome of many game events is determined by character stat tests. A D100 is rolled and compared to the current value of the tested stat. If the result of the dice roll is lower than or equal to the stat value the test counts as passed, otherwise it counts as failed.
+
+EXCEPTION: A dice roll between 1 and 5 automatically succeeds. 
+EXCEPTION: A dice roll between 96 and 100 automatically fails. 

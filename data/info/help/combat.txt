@@ -1,0 +1,107 @@
+Contents
+
+  Hit Test
+  Damage
+  Close Combat
+  Ranged Combat
+  Attacking Objects
+
+
+= Hit Test =
+
+A D100 is rolled; the result is called hit roll. The hit roll is compared to the hit value and the critical value. If hit roll is lower than or equal to the critical hit value the result is a critical hit. If this test fails the hit roll is compared against the hit value. If it is lower than or equal to it, the character has scored a normal hit. If both tests fail, the character has missed.
+
+EXCEPTION: A hit roll between 1 and 5 automatically succeeds. 
+EXCEPTION: A hit roll between 96 and 100 automatically fails. 
+
+Hit Value
+
+The base of the hit value is the attacker's ranged combat stat (for shooting), or his close combat stat (for close combat). Various modifiers are then applied to this base value to create the final hit value. The accuracy value of the attacker's weapon for example. Other modifiers will be described later.
+
+Critical Hit Value
+
+The critical hit value is equal to the hit value divided by ten rounding up. 
+
+= Damage =
+
+Successful hits cause injuries if they manage to break through the target's armour. This happens when the damage value of the hit is higher than the armour value of the target. In this case the damage surplus (damage value minus armour value) will be added to the injury value of the target. How many injuries a character can withstand before dying depends on his Toughness stat.
+The damage value usually depends on the used weapon. The damage value of unarmed attacks is 1DX, where X is the character's Strength divided by 10 (rounding down).
+
+Critical Hits
+
+A character may manage to score a critical hit i.e. to cause an exceptional amount of damage with an attack. Critical hits double the damage value of an attack. This happens before armour deductions but after all over modifiers have been processed. 
+
+= Close Combat =
+
+Strength Bonus
+
+Strong characters will get a damage bonus when using close combat weapons. Every full 10 points of strength over 40 increase the damage value of a hit by 1.
+
+Weapon Reach
+
+It is easier to hit your enemy if the weapon you are using is longer than theirs. For every point of reach which the attacker's weapon has over the defender, he gains a +10 to hit bonus, or, for every point lower, he suffers a -10 to hit penalty. For example, a weapon with Reach 2 against a weapon with Reach 3 suffers a -10 to hit penalty. Parrying is also affected by weapon reach. A character attempting to parry gains or loses 10 points for every point of difference between the reach value of his weapon and that of the attacker's.
+
+Parrying
+
+A character automatically attempts to parry close combat attacks if he is wielding a close combat weapon. Whether or not the attempt is successful is determined by rolling a D100. If the result is smaller than or equal to the defender's close combat stat divided by two + modifiers he has successfully parried the attack. 
+
+EXCEPTION: A parry roll between 1 and 5 automatically succeeds. 
+EXCEPTION: A parry roll between 96 and 100 automatically fails. 
+
+Characters who are not wielding a close combat weapon cannot parry.
+
+Parry Penalty
+
+All close combat weapons have a parry penalty. This represents the fact that some weapons are better suited for parrying than others. For example a sword has a lower parry penalty than an axe.
+
+Parrying Example
+
+Vesuvius (Close Combat 60) is wielding an axe (reach 2, -15 parry penalty) and attacks Martius (Close Combat 50) who wields a halberd (reach 4, -15 parry penalty). Martius' test value for the parry test is: 25 (WS / 2) + 20 (reach modifier) - 15 (parry penalty) = 30.
+
+= Ranged Combat =
+
+Firing Modes
+
+Single shot (S)
+
+A single shot weapon fires once per action. No special modifiers apply.
+
+Semi-automatic (SA)
+
+A semi-automatic weapon may fire a number of times per action, listed on the object information screen. The number in brackets indicates the minimum and maximum number of shots that may be fired per action. For example a SA (2/4) weapon may be fired 2 to 4 times per action. The character must declare before he fires the weapon how many shots he is going to fire for that action. A semi-auto shot suffers a to hit penalty equal to -10 for every shot taken. For example, when firing semi-auto (4), all four shots suffer a -40 to hit penalty. 
+
+It should be pointed out that SA mode does not (only) represent real world semi-automatic weapons. It represents a large variety of weapon types which are capable of rapid fire including some which we would call fully automatic in the real world. However the games reserves full auto mode (A) for weapons with a very high rate of fire.  
+
+Automatic (A)
+
+Firing on full auto means squeezing the trigger and letting rip in a pretty random fashion. This  works in a very different way to normal firing, to represent its particular advantages and disadvantages. When firing on full auto a character's ranged combat stat is divided by 5. After this the range modifier is applied and the result is multiplied by the spread factor i.e.: (Ranged Combat / 5 + range modifier) * spread. No further modifiers apply!
+
+A character can choose a spread factor between 1 and 4. The spread factor determines across how many tiles the fire is spread. It is easier to hit an enemy if one fires a broad wave of bullets towards him because he will have a hard time dodging that. However this reduces the number of shots that can hit an individual target: the number of shots fired at each target is equal to the number of shots the weapon can fire divided by the spread factor i.e. A(15) weapon / spread factor 3 = 5 shots fired  at each target . The target you choose for auto fire is the burst centre. If you choose a spread factor of 1 all shots  will be fired at this target. If you choose a spread factor of 2 the shots will be divided between the burst centre and an adjacent tile. If you choose a spread factor of 3 the shots will be divided between the burst centre and two adjacent tiles and so on. You cannot explicitly choose which adjacent tiles are fired at! However your character will prefer tiles with enemies on them i.e. if there are two enemies on adjacent tiles and you chose a spread factor of 3 both enemies will be fired at. If the chosen spread factor is higher than the number of enemies your character can target he will fire the other shots at randomly chosen tiles adjacent to the burst centre. Notice however that tiles who are not in your character's line of sight and tiles with friendly characters on them are not valid targets! If the number of valid targets is lower than the chosen spread factor the spread factor is automatically reduced.
+
+HINT: It is possible to choose an empty tile as the burst centre; this can be useful in some cases.
+
+Jammed Weapons
+
+If the hit roll of a shot results in an automatic failure the gun which has fired the shot jams. It has to be unjammed before it can be used again. It takes 2 actions to unjam a weapon.
+
+Range
+
+It is harder to shoot and hit a target at long range and conversely it is relatively easy to hit a target at short range. However you will not get a to hit bonus for short range if you fire in close combat (at a target on an adjacent tile) because aiming and shooting in such a situation is actually quite difficult. The accuracy of a weapon also depends on its type. The following table is used for modifiers due to range and weapon type:
+
+Range            |   Pistol   |    Basic   |   Heavy    |
+-----------------|------------|------------|------------|
+Close Combat     |   (0)      |   X        |   X        |
+Short Range      |   +10      |   +5       |   +5       |
+Medium Range     |   0        |   0        |   +5       |
+Long Range       |   -30      |   -10      |   -5       |
+Very Long Range  |   -100     |   -50      |   -20      |
+
+The 'X' means that basic and heavy weapons cannot be used in close combat at all. While a pistol may be used in this situation, the character's close combat stat will be used in this case for determining the outcome of the action (instead of his ranged combat stat).
+
+Reloading
+
+You do not need to look for ammo to reload your weapon. The game assumes that your character always has suitable ammo somewhere in the backpack. 
+
+= Attacking Objects =
+
+You can attack objects to destroy them. Attacks against objects always have a hit value of 100 because objects do not move (at least in this game). You need to use the advanced target mode if you want to attack objects because the direction-based targetter does not treat them as valid targets by default except if they are impassable obstacles (like barbed wire).

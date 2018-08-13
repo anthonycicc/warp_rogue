@@ -1,0 +1,166 @@
+~
+
+  Character Script: General Guderian
+
+~
+
+
+
+~
+
+  Death Script
+
+~
+if $KILLED = 'Yes'
+
+  ~ do nothing ~
+
+end_if
+
+~ Death Script End ~
+
+
+
+
+
+~
+
+  Dialogue Script
+
+~
+if $TRIGGERED = 'Yes'
+
+  ~
+    collecting dialogue determining data
+  ~
+  quest_status 'Dispose the Renegade' $renegade_quest_status
+
+
+  ~
+
+    Quest: Dispose the Renegade
+
+  ~
+
+  ~ are we done with this quest? ~
+  if $renegade_quest_status = 'Completed'
+    store $renegade_quest_done 'Yes'
+  else_if $renegade_quest_status = 'Rejected'
+    store $renegade_quest_done 'Yes'
+  else
+    store $renegade_quest_done 'No'
+  end_if
+
+  if $renegade_quest_done = 'No'
+
+    ~
+      quest not given - give quest
+    ~
+    if $renegade_quest_status = ''
+
+      dialogue_say 'The army has a very delicate problem.. We are '
+      dialogue_say 'looking for some hired guns who can keep a secret, '
+      dialogue_say 'but it is no job for greenhorns. Are you interested?'
+
+      dialogue_add_option 'Yes.'
+      dialogue_add_option 'No.'
+
+      dialogue_choice $choice
+ 
+      if $choice = 'No.'
+        quest_set_status 'Dispose the Renegade' 'Rejected'
+        end
+      end_if
+
+      dialogue_say 'Do you know Colonel Kurtz, the great war hero? You might '
+      dialogue_say 'have heard about his heroic death on the battle field in '
+      dialogue_say 'the news. Well, he is not dead.. '
+      dialogue_say 'He has gone insane, has been corrupted by Chaos, or '
+      dialogue_say 'something like that. Somehow he his managed to turn his '
+      dialogue_say 'unit against us. They occupy Fort Iron Gate. I hope you '
+      dialogue_say 'understand that we cannot use our own troops to handle this. '
+      dialogue_say 'If you could .. dispose him, I would give you some of the '
+      dialogue_say 'finest equipment the Imperial army has to offer.'
+
+      dialogue_add_option 'I will do it!'
+      dialogue_add_option 'No, I will not do this.'
+
+      dialogue_choice $choice
+
+      if $choice = 'I will do it!'
+
+        dialogue_say 'Excellent, Fort Iron Gate is south east of here.'
+        
+        quest_set_status 'Dispose the Renegade' 'Given'
+ 
+      else_if $choice = 'No, I will not do this.'
+
+        dialogue_say 'Well, if you tell anyone what you have just heard, you '
+        dialogue_say 'are dead! And I am not talking about some pleasant military '
+        dialogue_say 'execution. I would hand you over to the torturers of the '
+        dialogue_say 'Inquisition. So you better sew your mouth shut!'
+
+        quest_set_status 'Dispose the Renegade' 'Rejected'
+
+      end_if
+
+      dialogue_add_option '...'
+
+      dialogue_choice $choice
+
+      end
+
+    end_if
+  
+
+    ~ 
+      quest completed, but not rewarded 
+    ~
+    if $renegade_quest_status = 'Completed, Not Rewarded'
+
+      dialogue_say 'Good job, I am impressed. Here is your reward [He gives you '
+      dialogue_say 'two sets of storm tropper equipment]. But if you tell anyone '
+      dialogue_say 'about this, you are dead! And I am not talking about some '
+      dialogue_say 'pleasant military execution. I would hand you over to the '
+      dialogue_say 'torturers of the Inquisition. So you better sew your mouth shut!'
+
+      give_object $ACTIVE_CHARACTER 'Assault bolter'
+      give_object $ACTIVE_CHARACTER 'Assault armour'
+      give_object $ACTIVE_CHARACTER 'Chainsword'
+    
+      give_object $ACTIVE_CHARACTER 'Assault bolter'
+      give_object $ACTIVE_CHARACTER 'Assault armour'
+      give_object $ACTIVE_CHARACTER 'Chainsword'
+
+      quest_set_status 'Dispose the Renegade' 'Completed'
+    
+      dialogue_add_option '...'
+    
+      dialogue_choice $choice
+
+      end
+
+    end_if
+
+    ~ 
+      quest not completed 
+    ~
+    dialogue_say 'Fort Iron Gate is south east of here. Go there and kill Kurtz!'
+
+    dialogue_add_option '...'
+    
+    dialogue_choice $choice
+
+    end
+
+  end_if
+
+
+
+end_if
+
+
+
+
+~ Dialogue Script End ~
+

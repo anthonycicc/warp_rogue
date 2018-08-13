@@ -1,0 +1,170 @@
+#
+# Imperium Characters
+#
+
+
+NAME:Bismarck:
+FACTION:Imperium:
+GENDER:M:
+SYMBOL:H:
+POWER_LEVEL:1:
+CAREER:Noble:
+CC:32:0:
+RC:37:0:
+ST:44:0:
+TN:32:0:
+AG:48:0:
+IN:70:0:
+WP:79:0:
+FL:72:0:
+ATTRIBUTE:Unique:
+OBJECT:Imperial sword:
+OBJECT:Laser pistol:
+AI_DEFAULT_STATE:Wait:
+SCRIPT:bismarck.wca:
+DESCRIPTION:Governour Bismarck, the current governour of Proelium.:
+
+NAME:Institoris:
+FACTION:Imperium:
+GENDER:M:
+SYMBOL:H:
+POWER_LEVEL:3:
+CAREER:Wytch hunter:
+CC:60:0:
+RC:82:0:
+ST:68:0:
+TN:62:0:
+AG:77:0:
+IN:71:0:
+WP:70:0:
+FL:70:0:
+ATTRIBUTE:Unique:
+PERK:Stealth:Required:
+PERK:Alertness:Required:
+PERK:Daemon lore:Required:
+PERK:Psychic resistance:
+PERK:Spot weakness:Required:
+PERK:Marksman:Required:
+PERK:Critical shot:Required:
+PERK:Sneak attack:Required:
+OBJECT:Sniper rifle:
+OBJECT:Power knife:
+OBJECT:Light combat armour:
+AI_DEFAULT_STATE:Wait:
+SCRIPT:institoris.wca:
+DESCRIPTION:Inquisitor Institoris, he leads the Inquisition on Proelium.:
+
+NAME:Guderian:
+FACTION:Imperium:
+GENDER:M:
+SYMBOL:H:
+POWER_LEVEL:3:
+CAREER:General:
+CC:60:0:
+RC:62:0:
+ST:54:0:
+TN:52:0:
+AG:48:0:
+IN:74:0:
+WP:79:0:
+FL:75:0:
+ATTRIBUTE:Unique:
+PERK:Battle tactics:
+PERK:Leader:
+PERK:Weapon maintenance:
+OBJECT:Sword:
+OBJECT:Revolver:
+AI_DEFAULT_STATE:Wait:
+SCRIPT:guderian.wca:
+DESCRIPTION:General Guderian, supreme commander of the Imperial army on Proelium.:
+
+NAME:Solomon:
+FACTION:Imperium:
+GENDER:M:
+SYMBOL:H:
+POWER_LEVEL:3:
+CAREER:Judge:
+CC:70:0:
+RC:72:0:
+ST:66:0:
+TN:62:0:
+AG:52:0:
+IN:74:0:
+WP:71:0:
+FL:45:0:
+ATTRIBUTE:Unique:
+PERK:Marksman:
+PERK:Disarm:
+PERK:Leader:
+PERK:Rapid shot:
+PERK:Weapon maintenance:
+PERK:Unarmed combat:
+PERK:Battle tactics:
+OBJECT:Shock maul:
+OBJECT:Combat shotgun:
+OBJECT:Combat armour:
+AI_DEFAULT_STATE:Wait:
+SCRIPT:solomon.wca:
+DESCRIPTION:Chief Judge Solomon, head of the Council of Judges on Proelium.:
+
+
+
+## Trader NPCs ##
+
+NAME:Travus:
+FACTION:Imperium:
+GENDER:M:
+SYMBOL:H:
+COLOUR:Teal:
+POWER_LEVEL:1:
+CC:32:0:
+RC:37:0:
+ST:44:0:
+TN:32:0:
+AG:38:0:
+IN:41:0:
+WP:60:0:
+FL:57:0:
+OBJECT:Shotgun:
+AI_DEFAULT_STATE:Wait:
+SCRIPT:travus.wca:
+DESCRIPTION:A trader.:
+
+NAME:Schweitzer:
+FACTION:Imperium:
+GENDER:M:
+SYMBOL:H:
+COLOUR:Khaki:
+POWER_LEVEL:1:
+CC:32:0:
+RC:37:0:
+ST:44:0:
+TN:32:0:
+AG:38:0:
+IN:41:0:
+WP:60:0:
+FL:57:0:
+OBJECT:Needle pistol:
+AI_DEFAULT_STATE:Wait:
+SCRIPT:schweitzer.wca:
+DESCRIPTION:A trader. He sells drugs.:
+
+NAME:Mammon:
+FACTION:Imperium:
+GENDER:M:
+SYMBOL:H:
+POWER_LEVEL:3:
+CAREER:Rogue trader:
+CC:32:0:
+RC:37:0:
+ST:44:0:
+TN:32:0:
+AG:38:0:
+IN:41:0:
+WP:60:0:
+FL:57:0:
+OBJECT:Plasma pistol:
+AI_DEFAULT_STATE:Wait:
+SCRIPT:mammon.wca:
+DESCRIPTION:A trader. He sells special items.. for a special price.:
+

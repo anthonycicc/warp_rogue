@@ -1,0 +1,6 @@
+The complete source for the SDL library can be obtained from:
+http://www.libsdl.org
+
+The SDL library is provided under the terms of the LGPL license.  
+A copy of this license can be obtained from:
+http://www.gnu.org/copyleft/lesser.html

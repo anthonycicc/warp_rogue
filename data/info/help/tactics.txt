@@ -1,0 +1,17 @@
+NOTE: The AI will do the following things automatically if there is nothing more important to do: unjamming its weapon, reloading its weapon, and recovering (in that order).
+
+Plan A! (default behaviour)
+
+Follow the player controlled character if there are no noticed enemies. As soon as you notice enemies, attack the nearest enemy.
+
+Get ready!
+
+Stay at your current position, and wait for the enemy to show up. As soon as the enemy shows up, change tactic to "Plan A!".
+
+Stay close!
+
+Stay close to the player controlled character. Attack noticed enemies if it is possible without moving away from the player controlled character.
+
+Hold position!
+
+Stay at your current position. Attack noticed enemies if it is possible without moving away from your current position.

@@ -1,0 +1,40 @@
+~
+
+  Character Script: Colonel Kurtz
+
+~
+
+
+
+
+
+~
+
+  Death Script
+
+~
+if $KILLED = 'Yes'
+
+  quest_set_status 'Dispose the Renegade' 'Completed, Not Rewarded'
+
+end_if
+
+~ Death Script End ~
+
+
+
+
+
+~
+
+  Dialogue Script
+
+~
+if $TRIGGERED = 'Yes'
+
+  ~ do nothing ~
+
+end_if
+
+~ Dialogue Script End ~
+

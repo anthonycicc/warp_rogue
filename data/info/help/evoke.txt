@@ -1,0 +1,29 @@
+Contents
+
+  The Psychic Test
+  Range
+
+
+In order to evoke a psychic power a character must past a psychic test.
+
+= The Psychic Test =
+
+X D10 are rolled, where X depends on the evoker's psychic perk level. A character with Psychic I rolls one D10, a character with Psychic II rolls two D10, etc. The result is called evocation roll result.
+
+The evoction roll result is compared to the psychic test value. The psychic test value is equal to the evocation value of the power the character attempts to evoke + modifiers (see below). If the evocation roll result is equal to or greater than the psychic test value the evocation succeeds, otherwise it fails.
+
+EXCEPTION: If all the dice of the character's evocation roll come up 1, the evocation fails automatically.
+
+= Range =
+
+It is harder to project psychic force across a longer distance than projecting it at something nearby. This is represented by the following range-based modifiers which are applied to the psychic test value:
+
+Range            |  Modifier  |  
+-----------------|------------|
+Close Combat     |   +3       |  
+Short Range      |   0        | 
+Medium Range     |   +1       |   
+Long Range       |   +2       |  
+Very Long Range  |   +4       |
+
+Evoking psychic powers while being involved in close combat is also difficult, this is represented by the penalty for close combat evocations.

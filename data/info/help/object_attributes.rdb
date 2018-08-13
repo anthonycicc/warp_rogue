@@ -1,0 +1,132 @@
+#
+# Object attributes
+#
+
+NAME:Alien:
+DESCRIPTION:The object is alien technology. Characters need the alien technology :
+DESCRIPTION:perk to use the object.:
+
+NAME:Automatic recharge:
+DESCRIPTION:Weapons with this attribute cannot be reloaded manually, but must :
+DESCRIPTION:recharge. Recharging happens automatically. The reload value :
+DESCRIPTION:determines how many phases a weapon must recharge before it can be :
+DESCRIPTION:used again.:
+
+NAME:Blocks line of sight:
+DESCRIPTION:The object blocks the line of sight.:
+
+NAME:Cannot be parried:
+DESCRIPTION:The weapon cannot be parried.:
+
+NAME:Cannot parry:
+DESCRIPTION:The weapon cannot be used to parry.:
+
+NAME:Daemonic:
+DESCRIPTION:The object is daemonic.:
+
+NAME:Dangerous:
+DESCRIPITON:Stepping on the object is dangerous.:
+
+NAME:Environmental:
+DESCRIPTION:Armours with this attribute protect the wearer from environmental :
+DESCRIPTION:effects. Attacks executed with weapons which have this attribute :
+DESCRIPTION:are environmental effects e.g. poison gas.:
+
+NAME:Force:
+DESCRIPTION:Force weapons channel the mental energies of the wielder. A D10 is :
+DESCRIPTION:added to the damage power of the weapon. Force weapons do double :
+DESCRIPTION:damage against daemonic characters. To use the special powers of :
+DESCRIPTION:force weapons a character needs the Psychic weapons perk. :
+DESCRIPTION:If a character without this skill uses the weapon it will be :
+DESCRIPTION:treated like a normal weapon (i.e. no increased damage). :
+
+NAME:Force rune:
+DESCRIPTION:The force rune attribute amplifies the damage bonus of force :
+DESCRIPTION:weapons. If a force weapon has the force rune attribute it :
+DESCRIPTION:does 2D8 extra damage instead of 1D10.:
+
+NAME:Force channel:
+DESCRIPTION:An item with the force channel attribute can channel the psychic :
+DESCRIPTION:power of its wielder, making it easier to project it across :
+DESCRIPTION:longer distances. All range penalties, except the penalty for evoking :
+DESCRIPTION:psychic powers in close combat, are halved (rounding down) :
+DESCRIPTION: when such an item is wielded.:
+
+NAME:Hinders movement:
+DESCRIPTION:Characters who wear armour which carries this attribute are unable :
+DESCRIPTION:to run.:
+
+NAME:Ignore armour:
+DESCRIPTION:Weapons with this attribute ignore the armour value of the target, :
+DESCRIPTION:i.e. armours provide no protection against them.:
+
+NAME:Impassable:
+DESCRIPTION:The object is impassable.:
+
+NAME:Inherent:
+DESCRIPTION:The object is part of carrier's body. It cannot be dropped.:
+
+NAME:Jammed:
+DESCRIPTION:The weapon is jammed.:
+
+NAME:Laser:
+DESCRIPTION:If laser weapons malfunction, they unload completely.:
+
+NAME:Noisy:
+DESCRIPTION:Using noisy objects makes it impossible to use stealth.:
+
+NAME:Pain:
+DESCRIPTION:If a pain weapon penetrates the target's armour the target :
+DESCRIPTION:must pass a morale test. If the test fails the target :
+DESCRIPTION:becomes broken.:
+
+NAME:Partial reload:
+DESCRIPTION:In the case of a partial reload weapon the reload value determines :
+DESCRIPTION:how many shots can reloaded per action.:
+
+NAME:Disease:
+DESCRIPTION:All wounds caused by weapons which have the disease attribute :
+DESCRIPTION:disease the target unless it passes a -20 toughness test.:
+
+NAME:Plasma:
+DESCRIPTION:If plasma weapons malfunction, they may overheat forcing the wielder :
+DESCRIPTION:to drop them. If the wielder is really unlucky they might even :
+DESCRIPTION:explode...:
+
+NAME:Poison:
+DESCRIPTION:All wounds caused by weapons which have the poison attribute :
+DESCRIPTION:poison the target.:
+
+NAME:Power:
+DESCRIPTION:The armour value of the target is halved when calculating :
+DESCRIPTION:armour penetration / damage.:
+
+NAME:Projectile:
+DESCRIPTION:If projectile weapons malfunction, they jam.:
+
+NAME:Psychic bolt:
+DESCRIPTION:The object is a psychic bolt.:
+
+NAME:Reliable:
+DESCRIPTION:Weapons with this attribute do not malfunction.:
+
+NAME:Shock:
+DESCRIPTION:All hits from weapons which have the shock attribute paralyse :
+DESCRIPTION:the target unless it passes a toughness test.:
+
+NAME:Silent:
+DESCRIPTION:Ranged combat weapons with this attribute do not remove the :
+DESCRIPTION:unnoticed status of the shooter when fired, unless one of his :
+DESCRIPTION:enemies in line of sight has the alertness perk, or passes a :
+DESCRIPTION:50% test.:
+
+NAME:Strength boost:
+DESCRIPTION:Armours with this attribute increase the strength of the wearer :
+DESCRIPTION:by 10.:
+
+NAME:Strength boost II:
+DESCRIPTION:Armours with this attribute increase the strength of the wearer :
+DESCRIPTION:by 20.:
+
+NAME:Unique:
+DESCRIPTION:The object is unique.:

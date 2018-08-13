@@ -1,0 +1,45 @@
+#
+# Terrain
+#
+
+NAME:Metal floor:
+SYMBOL:Floor2:
+COLOUR:Dark metal:Dark rusty:33:
+DESCRIPTION:Cold, hard metal to die on.:
+
+NAME:Blackstone floor:
+SYMBOL:Floor2:
+COLOUR:Dark ash:
+DESCRIPTION:Strange, unnatural looking floor.:
+
+NAME:Debris:
+SYMBOL:%:
+COLOUR:Dark metal:Dark rusty:33:
+DESCRIPTION:Debris.:
+
+NAME:Chemical sludge:
+SYMBOL:=:
+COLOUR:Radioactive:Dark radioactive:33:
+ATTRIBUTE:Causes disease:
+ATTRIBUTE:Dangerous:
+DESCRIPTION:Chemical sludge.:
+
+NAME:Smog:
+SYMBOL:~:
+COLOUR:Slate:Metal:33:
+ATTRIBUTE:Blocks line of sight:
+ATTRIBUTE:Air:
+ATTRIBUTE:Dangerous:
+DESCRIPTION:Smog.:
+
+NAME:Ash wastes:
+SYMBOL:Floor:
+COLOUR:Dark ash:Ash:33:
+DESCRIPTION:Ash wastes.:
+
+NAME:Rock floor:
+SYMBOL:Floor:
+COLOUR:Dark ash:Ash:33:
+DESCRIPTION:Rock floor.:
+
+

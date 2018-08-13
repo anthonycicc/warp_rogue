@@ -1,0 +1,1 @@
+This is a permadeath game in normal mode i.e. if you character dies you have lost, and your saved game is automatically erased - no second chances! Easy mode is more forgiving; it allows you to indefinetly restart the game from the last save point. A save point is created automatically everytime you leave an area. Keep in mind that the game is balanced for normal mode.

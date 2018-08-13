@@ -1,0 +1,147 @@
+~
+
+  Character Script: Random Recruitable Character
+
+~
+
+
+
+
+
+~
+
+  Death Script
+
+~
+if $KILLED = 'Yes'
+
+  ~ do nothing ~
+
+end_if
+
+~ Death Script End ~
+
+
+
+
+
+~
+
+  Dialogue Script
+
+~
+if $TRIGGERED = 'Yes'
+
+
+
+  ~
+    collecting dialogue determining data
+  ~
+  character_power_level $SELF $self_power
+  party_power_level $recruiting_power
+  party_n_members $party_size
+  inventory_value $SELF $recruiting_cost
+  personal_funds $ACTIVE_CHARACTER $recruiter_money
+  area_name $location
+
+  dialogue_say 'Hello.'
+
+
+  ~
+    dialogue loop
+  ~
+  loop
+
+    if $choice = 'Bye.'
+      break
+    end_if
+   
+
+    ~ subject to change, so we need to check this here ~ 
+    party_is_member $SELF $self_party_member
+
+    if $location = 'Hive Cruor'
+      dialogue_add_option 'What is the current situation like?'
+      dialogue_add_option 'I am looking for a trader..'
+    end_if
+
+    if $self_party_member = 'Yes'
+      dialogue_add_option 'Leave the party!'
+    else 
+      dialogue_add_option 'Join my party!'
+    end_if
+
+    dialogue_add_option 'Bye.'
+
+
+    dialogue_choice $choice
+
+    if $choice = 'What is the current situation like?'
+
+      dialogue_say 'According to InfoNet? We are winning of course .. '
+      dialogue_say 'but I would not leave the hive if I were you.. '
+      dialogue_say 'I have heard some horrible things.. but only the guys '
+      dialogue_say 'in the government district, on level 9, really know. '
+
+    else_if $choice = 'I am looking for a trader..'
+
+      dialogue_say 'So what are you doing here?! The commercial district is on level 8.'
+
+    else_if $choice = 'Join my party!'
+
+      if $party_size = 3
+
+        dialogue_say 'I think your party is big enough already.'
+        continue
+
+      else_if $recruiting_power < $self_power
+
+        dialogue_say 'No, your party looks weak.'
+        continue
+
+      end_if
+
+      if $recruiting_cost = 0
+        party_join $SELF
+        character_set_faction $SELF 'Player'
+        break
+      end_if
+  
+      dialogue_say 'I demand ' $recruiting_cost ' credits.' 
+
+      dialogue_add_option 'Ok.'
+      dialogue_add_option 'No way!'
+      dialogue_choice $choice    
+
+      if $choice = 'No way!'
+        continue
+      end_if
+
+      if $recruiting_cost > $recruiter_money
+        dialogue_say 'So where are my credits?!'
+        dialogue_add_option '...'
+        dialogue_choice $choice
+        continue
+      end_if
+
+      subtract_money $ACTIVE_CHARACTER $recruiting_cost
+      party_join $SELF
+      character_set_faction $SELF 'Player'
+      break
+
+    else_if $choice = 'Leave the party!'
+   
+      dialogue_say 'Ok.' 
+
+      party_leave $SELF
+  
+      break
+
+    end_if
+
+  end_loop
+
+end_if
+
+~ Dialogue Script End ~
+

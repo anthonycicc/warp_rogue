@@ -1,0 +1,123 @@
+Warp Rogue Scenario Creation Guide
+
+
+WORK IN PROGRESS - VERY INCOMPLETE - MAY CONTAIN ERRORS!
+
+
+Contents
+
+  The Basics
+  Scripts and Data
+  Character Scripts
+  Dungeon Scripts
+  Script Functions
+  Colours
+  Standards
+  Error Log
+  Debug Commands
+
+
+
+
+
+The Basics
+==========
+Warp Rogue is consists of two parts, the engine and the scenario. The engine is responsible for handling most of the program logic, the scenario consists of most of the actual game content (i.e. objects, NPCs, etc.). Some parts of the game content (like perks) are hardcoded (i.e. part of the engine).
+
+The scenario files are the files in the /data directory. Warp Rogue ships with a default scenario, so this directory already exists in a fresh Warp Rogue installation. To install a new scenario just replace the Warp Rogue's /data directory.
+
+ 
+Scripts and Data
+================
+A scenario consists of two different kinds of files: data files and scripts. The data files contain things like the definitions of the terrain types, objects, and NPCs used in the scenario. All data files have the extension ".rdb" and use a common format, the so called "Roguelike Database Format". You can find the documentation of that format in ./lib/rdb.txt. You can edit .rdb files with your favourite text editor, because they are really just text files. The files were designed to be easy to understand and modify. Just open one of the .rdb files of the default scenario, and look at the content. You might be able to understand it without reading any documentation!
+
+Scripts are the other kind of files you will deal with, they have the extension ".wca". The scripts handle things which require some program logic like dialogue, quests, or world generation. The scripting language used is called Wicca. It is a minimalist programming language which should not be too hard to understand. If you already have some programming experience, you should be able to understand most scripts. The file XXX describes the Wicca syntax, assuming previous programming knowledge. The file YYY is meant for people who have no programming knowledge at all.
+
+!! must write file XXX and file YYY
+
+
+
+Character Scripts
+=================
+Character definitions have an optional data field called "SCRIPT". If you define a character script the script will be executed every time the character is "triggered" (using the trigger command), and when he dies. Character scripts can be used for dialogues, or for quests where the death of a specific character is important for example. How do you know what caused the execution of the quest? Simple: 
+
+If the magic variable $TRIGGERED equals 'Yes', the character was triggered.
+
+If the magic variable $KILLED equals 'Yes', the character was killed.
+
+
+
+Dungeon Scripts
+===============
+A dungeon script is responsible for managing a dungeon. It controls things like dungeon generation, and (re)spawning of enemies and objects for example. A dungeon script is called multiple times during the generation phase, once for each dungeon level. Additionally, it is called every time the player character enters a level of the dungeon. How do you know what caused the execution of the dungeon script? Simple:
+
+If the magic variable $GENERATION equals 'Yes', we are in the generation phase.
+
+The magic variable $LEVEL contains the number of the current level.
+
+
+
+Script Functions
+================
+Here is a list of all Warp Rogue specific script functions. These functions can be called from ANY script, however they might not work if you call them at the wrong point. Calling a dungeon generation function from a character script would cause an error for example. Here is the list:
+
+!! must add list of all script functions + descriptions
+
+
+
+Colours
+=======
+
+Colour Fields
+------------
+The data tokens of the COLOUR field might need some explanation. Here are two examples of valid COLOUR field definitions:
+
+COLOUR:Red:
+
+COLOUR:Metal:Rusty:33:
+
+The first is a simple definition, the second one defines the COLOUR field of a terrain / an object which features alternating colors. In the example 'Metal' is the primary color, 'Rusty' is the secondary color, and '33' is the secondary color frequency.  
+
+The frequency determines how often the secondary color is chosen instead of the primary color. The frequency ranges from 1 to 100 i.e. 1% - 100% chance that the secondary color is used.
+
+You may want a list of all available colors. Download the source of the game and look at ui_colors.c. Don't be afraid, you don't need to be a C programmer to understand the color table. 
+
+
+
+Standards
+=========
+
+NPC Symbols
+------------
+Lowercase = small, uppercase = average/tall
+
+A = Alien
+C = Chaos aligned humans
+B = Beast (actually animals)
+D = Daemon
+H = Human (actually Imperial humans)
+R = Rebel/outcast humans (enemies of the Imperium)
+
+
+
+Error Log
+=========
+If the program terminates itself at startup, you did something wrong. If you are lucky the program managed to detect the error. Look for a log file in $USER_DATA. 
+
+
+
+Debug Commands
+===============
+To enter a debug command during play use the debug console command: '#'
+Nothing visible will happen, but the key handler is waiting for your debug command. 
+
+List of Debug Commands
+
+'x': Player controlled character gets 1000 EP.
+'m': Player controlled character gets 10000 credits.
+'o': Gives the player controlled character an object.
+'q': Sets the status of a quest.
+
+
+
+

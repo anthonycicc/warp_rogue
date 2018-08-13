@@ -1,0 +1,84 @@
+~
+
+  Dungeon Script: Hive Melkor
+
+~
+
+
+
+~
+
+  dungeon generation
+
+~
+if $GENERATION = 'Yes'
+
+  ~
+    level map generation
+  ~
+  dungeon_set_wall 'Metal wall'
+  dungeon_set_floor 'Metal floor'
+  dungeon_set_connections 'Elevator' 'Elevator'
+  dungeon_set_pools 'Chemical sludge'
+  dungeon_set_obstacles 'Barbed wire' 'Barricade'
+  dungeon_set_environment 'Smog'
+
+  ~ ground level ~
+  if $LEVEL = 0
+    dungeon_set_environment 'Ash wastes'
+    dungeon_set_gate_level 0
+  end_if
+
+  dungeon_generate
+
+
+  ~
+    character spawning
+  ~
+  if $LEVEL = 3
+
+    spawn_object 'Hammer of Fate'
+
+    spawn_character 'Black Death'
+    spawn_character 'Ratkin assassin'
+    spawn_character 'Ratkin assassin'
+
+  else_if $LEVEL = 2
+
+    randomiser_add 'Ratkin warrior' 500
+    randomiser_add 'Pestling' 200
+    randomiser_add 'Corpse fly' 100
+    randomiser_add 'Corpse beetle' 200
+
+    randomiser_spawn_characters 10
+
+  else_if $LEVEL = 1
+
+    spawn_character 'King Pest'
+
+    randomiser_add 'Plague cultist' 100
+    randomiser_add 'Pestling' 100
+    randomiser_add 'Corpse fly' 100
+
+    randomiser_spawn_characters 9
+   
+  else_if $LEVEL = 0
+
+    spawn_character 'Igor'
+
+    randomiser_add 'Igur' 300
+    randomiser_add 'Pestling' 100
+    randomiser_add 'Corpse fly' 100
+    randomiser_add 'Corpse beetle' 100  
+
+    randomiser_spawn_characters 9
+
+  end_if
+
+  ~ turn the area into ruins ~
+  area_make_ruins 'Debris'
+
+end_if
+
+
+
