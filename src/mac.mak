@@ -27,7 +27,7 @@ DMG = wrogue-$(GAME_VERSION).dmg
 DMG_TMP = $(DMG:.dmg=.tmp.dmg)
 
 
-include sources.inc
+include wrogue_sources.inc
 
 SRC_PLATFORM = \
   platform/sdl/platform_sdl.c \
@@ -46,14 +46,14 @@ CFLAGS ?= -std=c99 -Wall -Os -fomit-frame-pointer -ffast-math
 MFLAGS ?= -Wall -Os -fomit-frame-pointer -ffast-math
 
 CFLAGS += -std=c99 -F"$(SDL_FRAMEWORK_PATH)" \
--I"$(SDL_FRAMEWORK_PATH)/SDL.framework/Headers" -I. -I./lib \
--isysroot/Developer/SDKs/MacOSX10.4u.sdk -arch i386 -arch ppc -Os
+-I"$(SDL_FRAMEWORK_PATH)/SDL2.framework/Headers" -I. -I./lib \
+-isysroot/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Os
 
-MFLAGS += -I"$(SDL_FRAMEWORK_PATH)/SDL.framework/Headers" \
--isysroot/Developer/SDKs/MacOSX10.4u.sdk -arch i386 -arch ppc -Os
+MFLAGS += -I"$(SDL_FRAMEWORK_PATH)/SDL2.framework/Headers" \
+-isysroot/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Os
 
-LDFLAGS += -F"$(SDL_FRAMEWORK_PATH)" -framework SDL -framework Cocoa \
--lm -arch i386 -arch ppc -Wl,-syslibroot,/Developer/SDKs/MacOSX10.4u.sdk
+LDFLAGS += -F"$(SDL_FRAMEWORK_PATH)" -framework SDL2 -framework Cocoa \
+-lm -Wl,-syslibroot,/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
 
 RM = rm -rf
 
@@ -88,9 +88,9 @@ app: $(EXE)
 	sed '$(INFO_PLIST_PATTERN)' "$(APP_TEMPLATE)/Contents/Info.plist" > "app/$(GAME_NAME).app/Contents/Info.plist"
 	cp $(EXE) "app/$(GAME_NAME).app/Contents/MacOS/$(EXEC_NAME)"
 	ln -s "Contents/MacOS/$(EXEC_NAME)" "app/$(GAME_NAME).app/$(EXEC_NAME)"
-	cp -R "$(SDL_FRAMEWORK_PATH)/SDL.framework" "app/$(GAME_NAME).app/Contents/Frameworks"
-	rm -r "app/$(GAME_NAME).app/Contents/Frameworks/SDL.framework/Versions/A/Headers"
-	rm "app/$(GAME_NAME).app/Contents/Frameworks/SDL.framework/Headers"
+	cp -R "$(SDL_FRAMEWORK_PATH)/SDL2.framework" "app/$(GAME_NAME).app/Contents/Frameworks"
+	rm -r "app/$(GAME_NAME).app/Contents/Frameworks/SDL2.framework/Versions/A/Headers"
+	rm "app/$(GAME_NAME).app/Contents/Frameworks/SDL2.framework/Headers"
 	cp -R "$(DATA_DIR)/"* "app/$(GAME_NAME).app/Contents/Resources"	
 	cp "./platform/mac/$(ICON_NAME)" "app/$(GAME_NAME).app/Contents/Resources/"
 
