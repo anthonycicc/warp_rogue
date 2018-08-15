@@ -619,7 +619,7 @@ static void background_init(void)
         background_image = SDL_LoadBMP(data_path());
         if (background_image == NULL) load_bmp_error();
 
-        Background = SDL_DisplayFormat(background_image);
+        Background = SDL_ConvertSurfaceFormat(background_image);
         
         SDL_FreeSurface(background_image);
 }
